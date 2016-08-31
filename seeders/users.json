@@ -1,0 +1,20 @@
+{
+  "users": {
+    "_model": "Users",
+    "gustavo": {
+      "name": "Gustavo Viegas",
+      "age": 20,
+      "email": "gustavo83geosc@gmail.com",
+      "password": "gaviao",
+      "location": {
+        "city": "Betim",
+        "state": "MG"
+      },
+      "contact": {
+        "whatsapp": "31 99251 4251",
+        "facebook": "gustavofviegas",
+        "phone": "31 3595 7005"
+      }
+    }
+  }
+}
