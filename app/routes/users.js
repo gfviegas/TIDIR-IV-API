@@ -3,9 +3,27 @@ let User = require('../models/Users');
 let jwt = require('express-jwt');
 
 /**
+ * Check if there is an email registred
+ */
+router.get('/check/:email', (req, res) => {
+  req.checkParams('email', 'invalid').notEmpty();
+  User.findOne({
+    email: req.params.email
+  }, (err, user) => {
+    if (err) throw err;
+
+    if (!user) {
+      res.status(200).json({ taken: false });
+    } else {
+      res.status(200).json({ taken: true });
+    }
+  });
+});
+
+/**
  * Get all users
  */
-router.get('/', jwt({secret: process.env.APP_SECRET}), (req, res) => {
+router.get('/', (req, res) => {
   User.find((err, users) => {
     if (err) throw err;
     res.json(users);

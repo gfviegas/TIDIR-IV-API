@@ -3,8 +3,8 @@
     "_model": "Users",
     "gustavo": {
       "name": "Gustavo Viegas",
-      "email": "gustavo83geosc@gmail.com",
-      "password": "gaviao",
+      "email": "teste@teste.com",
+      "password": "teste",
       "location": {
         "city": "Betim",
         "state": "MG"
@@ -12,6 +12,20 @@
       "contact": {
         "whatsapp": "31 99251 4251",
         "facebook": "gustavofviegas",
+        "phone": "31 3595 7005"
+      }
+    },
+    "silvio": {
+      "name": "Silvio Santos",
+      "email": "silvio@teste.com",
+      "password": "teste",
+      "location": {
+        "city": "Betim",
+        "state": "MG"
+      },
+      "contact": {
+        "whatsapp": "31 99251 4251",
+        "facebook": "silviosantos",
         "phone": "31 3595 7005"
       }
     }
