@@ -1,0 +1,377 @@
+[
+  {
+    "id": "5351",
+    "name": "Amparo de São Francisco",
+    "UF": "25"
+  },
+  {
+    "id": "5352",
+    "name": "Aquidabã",
+    "UF": "25"
+  },
+  {
+    "id": "5353",
+    "name": "Aracaju",
+    "UF": "25"
+  },
+  {
+    "id": "5354",
+    "name": "Arauá",
+    "UF": "25"
+  },
+  {
+    "id": "5355",
+    "name": "Areia Branca",
+    "UF": "25"
+  },
+  {
+    "id": "5356",
+    "name": "Barra dos Coqueiros",
+    "UF": "25"
+  },
+  {
+    "id": "5357",
+    "name": "Boquim",
+    "UF": "25"
+  },
+  {
+    "id": "5358",
+    "name": "Brejo Grande",
+    "UF": "25"
+  },
+  {
+    "id": "5359",
+    "name": "Campo do Brito",
+    "UF": "25"
+  },
+  {
+    "id": "5360",
+    "name": "Canhoba",
+    "UF": "25"
+  },
+  {
+    "id": "5361",
+    "name": "Canindé de São Francisco",
+    "UF": "25"
+  },
+  {
+    "id": "5362",
+    "name": "Capela",
+    "UF": "25"
+  },
+  {
+    "id": "5363",
+    "name": "Carira",
+    "UF": "25"
+  },
+  {
+    "id": "5364",
+    "name": "Carmópolis",
+    "UF": "25"
+  },
+  {
+    "id": "5365",
+    "name": "Cedro de São João",
+    "UF": "25"
+  },
+  {
+    "id": "5366",
+    "name": "Cristinápolis",
+    "UF": "25"
+  },
+  {
+    "id": "5367",
+    "name": "Cumbe",
+    "UF": "25"
+  },
+  {
+    "id": "5368",
+    "name": "Divina Pastora",
+    "UF": "25"
+  },
+  {
+    "id": "5369",
+    "name": "Estância",
+    "UF": "25"
+  },
+  {
+    "id": "5370",
+    "name": "Feira Nova",
+    "UF": "25"
+  },
+  {
+    "id": "5371",
+    "name": "Frei Paulo",
+    "UF": "25"
+  },
+  {
+    "id": "5372",
+    "name": "Gararu",
+    "UF": "25"
+  },
+  {
+    "id": "5373",
+    "name": "General Maynard",
+    "UF": "25"
+  },
+  {
+    "id": "5374",
+    "name": "Gracho Cardoso",
+    "UF": "25"
+  },
+  {
+    "id": "5375",
+    "name": "Ilha das Flores",
+    "UF": "25"
+  },
+  {
+    "id": "5376",
+    "name": "Indiaroba",
+    "UF": "25"
+  },
+  {
+    "id": "5377",
+    "name": "Itabaiana",
+    "UF": "25"
+  },
+  {
+    "id": "5378",
+    "name": "Itabaianinha",
+    "UF": "25"
+  },
+  {
+    "id": "5379",
+    "name": "Itabi",
+    "UF": "25"
+  },
+  {
+    "id": "5380",
+    "name": "Itaporanga d`Ajuda",
+    "UF": "25"
+  },
+  {
+    "id": "5381",
+    "name": "Japaratuba",
+    "UF": "25"
+  },
+  {
+    "id": "5382",
+    "name": "Japoatã",
+    "UF": "25"
+  },
+  {
+    "id": "5383",
+    "name": "Lagarto",
+    "UF": "25"
+  },
+  {
+    "id": "5384",
+    "name": "Laranjeiras",
+    "UF": "25"
+  },
+  {
+    "id": "5385",
+    "name": "Macambira",
+    "UF": "25"
+  },
+  {
+    "id": "5386",
+    "name": "Malhada dos Bois",
+    "UF": "25"
+  },
+  {
+    "id": "5387",
+    "name": "Malhador",
+    "UF": "25"
+  },
+  {
+    "id": "5388",
+    "name": "Maruim",
+    "UF": "25"
+  },
+  {
+    "id": "5389",
+    "name": "Moita Bonita",
+    "UF": "25"
+  },
+  {
+    "id": "5390",
+    "name": "Monte Alegre de Sergipe",
+    "UF": "25"
+  },
+  {
+    "id": "5391",
+    "name": "Muribeca",
+    "UF": "25"
+  },
+  {
+    "id": "5392",
+    "name": "Neópolis",
+    "UF": "25"
+  },
+  {
+    "id": "5393",
+    "name": "Nossa Senhora Aparecida",
+    "UF": "25"
+  },
+  {
+    "id": "5394",
+    "name": "Nossa Senhora da Glória",
+    "UF": "25"
+  },
+  {
+    "id": "5395",
+    "name": "Nossa Senhora das Dores",
+    "UF": "25"
+  },
+  {
+    "id": "5396",
+    "name": "Nossa Senhora de Lourdes",
+    "UF": "25"
+  },
+  {
+    "id": "5397",
+    "name": "Nossa Senhora do Socorro",
+    "UF": "25"
+  },
+  {
+    "id": "5398",
+    "name": "Pacatuba",
+    "UF": "25"
+  },
+  {
+    "id": "5399",
+    "name": "Pedra Mole",
+    "UF": "25"
+  },
+  {
+    "id": "5400",
+    "name": "Pedrinhas",
+    "UF": "25"
+  },
+  {
+    "id": "5401",
+    "name": "Pinhão",
+    "UF": "25"
+  },
+  {
+    "id": "5402",
+    "name": "Pirambu",
+    "UF": "25"
+  },
+  {
+    "id": "5403",
+    "name": "Poço Redondo",
+    "UF": "25"
+  },
+  {
+    "id": "5404",
+    "name": "Poço Verde",
+    "UF": "25"
+  },
+  {
+    "id": "5405",
+    "name": "Porto da Folha",
+    "UF": "25"
+  },
+  {
+    "id": "5406",
+    "name": "Propriá",
+    "UF": "25"
+  },
+  {
+    "id": "5407",
+    "name": "Riachão do Dantas",
+    "UF": "25"
+  },
+  {
+    "id": "5408",
+    "name": "Riachuelo",
+    "UF": "25"
+  },
+  {
+    "id": "5409",
+    "name": "Ribeirópolis",
+    "UF": "25"
+  },
+  {
+    "id": "5410",
+    "name": "Rosário do Catete",
+    "UF": "25"
+  },
+  {
+    "id": "5411",
+    "name": "Salgado",
+    "UF": "25"
+  },
+  {
+    "id": "5412",
+    "name": "Santa Luzia do Itanhy",
+    "UF": "25"
+  },
+  {
+    "id": "5413",
+    "name": "Santa Rosa de Lima",
+    "UF": "25"
+  },
+  {
+    "id": "5414",
+    "name": "Santana do São Francisco",
+    "UF": "25"
+  },
+  {
+    "id": "5415",
+    "name": "Santo Amaro das Brotas",
+    "UF": "25"
+  },
+  {
+    "id": "5416",
+    "name": "São Cristóvão",
+    "UF": "25"
+  },
+  {
+    "id": "5417",
+    "name": "São Domingos",
+    "UF": "25"
+  },
+  {
+    "id": "5418",
+    "name": "São Francisco",
+    "UF": "25"
+  },
+  {
+    "id": "5419",
+    "name": "São Miguel do Aleixo",
+    "UF": "25"
+  },
+  {
+    "id": "5420",
+    "name": "Simão Dias",
+    "UF": "25"
+  },
+  {
+    "id": "5421",
+    "name": "Siriri",
+    "UF": "25"
+  },
+  {
+    "id": "5422",
+    "name": "Telha",
+    "UF": "25"
+  },
+  {
+    "id": "5423",
+    "name": "Tobias Barreto",
+    "UF": "25"
+  },
+  {
+    "id": "5424",
+    "name": "Tomar do Geru",
+    "UF": "25"
+  },
+  {
+    "id": "5425",
+    "name": "Umbaúba",
+    "UF": "25"
+  }
+]

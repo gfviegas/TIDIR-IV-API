@@ -1,0 +1,512 @@
+[
+  {
+    "id": "101",
+    "name": "Água Branca",
+    "UF": "2"
+  },
+  {
+    "id": "102",
+    "name": "Anadia",
+    "UF": "2"
+  },
+  {
+    "id": "103",
+    "name": "Arapiraca",
+    "UF": "2"
+  },
+  {
+    "id": "104",
+    "name": "Atalaia",
+    "UF": "2"
+  },
+  {
+    "id": "105",
+    "name": "Barra de Santo Antônio",
+    "UF": "2"
+  },
+  {
+    "id": "106",
+    "name": "Barra de São Miguel",
+    "UF": "2"
+  },
+  {
+    "id": "107",
+    "name": "Batalha",
+    "UF": "2"
+  },
+  {
+    "id": "108",
+    "name": "Belém",
+    "UF": "2"
+  },
+  {
+    "id": "109",
+    "name": "Belo Monte",
+    "UF": "2"
+  },
+  {
+    "id": "110",
+    "name": "Boca da Mata",
+    "UF": "2"
+  },
+  {
+    "id": "111",
+    "name": "Branquinha",
+    "UF": "2"
+  },
+  {
+    "id": "112",
+    "name": "Cacimbinhas",
+    "UF": "2"
+  },
+  {
+    "id": "113",
+    "name": "Cajueiro",
+    "UF": "2"
+  },
+  {
+    "id": "114",
+    "name": "Campestre",
+    "UF": "2"
+  },
+  {
+    "id": "115",
+    "name": "Campo Alegre",
+    "UF": "2"
+  },
+  {
+    "id": "116",
+    "name": "Campo Grande",
+    "UF": "2"
+  },
+  {
+    "id": "117",
+    "name": "Canapi",
+    "UF": "2"
+  },
+  {
+    "id": "118",
+    "name": "Capela",
+    "UF": "2"
+  },
+  {
+    "id": "119",
+    "name": "Carneiros",
+    "UF": "2"
+  },
+  {
+    "id": "120",
+    "name": "Chã Preta",
+    "UF": "2"
+  },
+  {
+    "id": "121",
+    "name": "Coité do Nóia",
+    "UF": "2"
+  },
+  {
+    "id": "122",
+    "name": "Colônia Leopoldina",
+    "UF": "2"
+  },
+  {
+    "id": "123",
+    "name": "Coqueiro Seco",
+    "UF": "2"
+  },
+  {
+    "id": "124",
+    "name": "Coruripe",
+    "UF": "2"
+  },
+  {
+    "id": "125",
+    "name": "Craíbas",
+    "UF": "2"
+  },
+  {
+    "id": "126",
+    "name": "Delmiro Gouveia",
+    "UF": "2"
+  },
+  {
+    "id": "127",
+    "name": "Dois Riachos",
+    "UF": "2"
+  },
+  {
+    "id": "128",
+    "name": "Estrela de Alagoas",
+    "UF": "2"
+  },
+  {
+    "id": "129",
+    "name": "Feira Grande",
+    "UF": "2"
+  },
+  {
+    "id": "130",
+    "name": "Feliz Deserto",
+    "UF": "2"
+  },
+  {
+    "id": "131",
+    "name": "Flexeiras",
+    "UF": "2"
+  },
+  {
+    "id": "132",
+    "name": "Girau do Ponciano",
+    "UF": "2"
+  },
+  {
+    "id": "133",
+    "name": "Ibateguara",
+    "UF": "2"
+  },
+  {
+    "id": "134",
+    "name": "Igaci",
+    "UF": "2"
+  },
+  {
+    "id": "135",
+    "name": "Igreja Nova",
+    "UF": "2"
+  },
+  {
+    "id": "136",
+    "name": "Inhapi",
+    "UF": "2"
+  },
+  {
+    "id": "137",
+    "name": "Jacaré dos Homens",
+    "UF": "2"
+  },
+  {
+    "id": "138",
+    "name": "Jacuípe",
+    "UF": "2"
+  },
+  {
+    "id": "139",
+    "name": "Japaratinga",
+    "UF": "2"
+  },
+  {
+    "id": "140",
+    "name": "Jaramataia",
+    "UF": "2"
+  },
+  {
+    "id": "141",
+    "name": "Jequiá da Praia",
+    "UF": "2"
+  },
+  {
+    "id": "142",
+    "name": "Joaquim Gomes",
+    "UF": "2"
+  },
+  {
+    "id": "143",
+    "name": "Jundiá",
+    "UF": "2"
+  },
+  {
+    "id": "144",
+    "name": "Junqueiro",
+    "UF": "2"
+  },
+  {
+    "id": "145",
+    "name": "Lagoa da Canoa",
+    "UF": "2"
+  },
+  {
+    "id": "146",
+    "name": "Limoeiro de Anadia",
+    "UF": "2"
+  },
+  {
+    "id": "147",
+    "name": "Maceió",
+    "UF": "2"
+  },
+  {
+    "id": "148",
+    "name": "Major Isidoro",
+    "UF": "2"
+  },
+  {
+    "id": "149",
+    "name": "Mar Vermelho",
+    "UF": "2"
+  },
+  {
+    "id": "150",
+    "name": "Maragogi",
+    "UF": "2"
+  },
+  {
+    "id": "151",
+    "name": "Maravilha",
+    "UF": "2"
+  },
+  {
+    "id": "152",
+    "name": "Marechal Deodoro",
+    "UF": "2"
+  },
+  {
+    "id": "153",
+    "name": "Maribondo",
+    "UF": "2"
+  },
+  {
+    "id": "154",
+    "name": "Mata Grande",
+    "UF": "2"
+  },
+  {
+    "id": "155",
+    "name": "Matriz de Camaragibe",
+    "UF": "2"
+  },
+  {
+    "id": "156",
+    "name": "Messias",
+    "UF": "2"
+  },
+  {
+    "id": "157",
+    "name": "Minador do Negrão",
+    "UF": "2"
+  },
+  {
+    "id": "158",
+    "name": "Monteirópolis",
+    "UF": "2"
+  },
+  {
+    "id": "159",
+    "name": "Murici",
+    "UF": "2"
+  },
+  {
+    "id": "160",
+    "name": "Novo Lino",
+    "UF": "2"
+  },
+  {
+    "id": "161",
+    "name": "Olho d`Água das Flores",
+    "UF": "2"
+  },
+  {
+    "id": "162",
+    "name": "Olho d`Água do Casado",
+    "UF": "2"
+  },
+  {
+    "id": "163",
+    "name": "Olho d`Água Grande",
+    "UF": "2"
+  },
+  {
+    "id": "164",
+    "name": "Olivença",
+    "UF": "2"
+  },
+  {
+    "id": "165",
+    "name": "Ouro Branco",
+    "UF": "2"
+  },
+  {
+    "id": "166",
+    "name": "Palestina",
+    "UF": "2"
+  },
+  {
+    "id": "167",
+    "name": "Palmeira dos Índios",
+    "UF": "2"
+  },
+  {
+    "id": "168",
+    "name": "Pão de Açúcar",
+    "UF": "2"
+  },
+  {
+    "id": "169",
+    "name": "Pariconha",
+    "UF": "2"
+  },
+  {
+    "id": "170",
+    "name": "Paripueira",
+    "UF": "2"
+  },
+  {
+    "id": "171",
+    "name": "Passo de Camaragibe",
+    "UF": "2"
+  },
+  {
+    "id": "172",
+    "name": "Paulo Jacinto",
+    "UF": "2"
+  },
+  {
+    "id": "173",
+    "name": "Penedo",
+    "UF": "2"
+  },
+  {
+    "id": "174",
+    "name": "Piaçabuçu",
+    "UF": "2"
+  },
+  {
+    "id": "175",
+    "name": "Pilar",
+    "UF": "2"
+  },
+  {
+    "id": "176",
+    "name": "Pindoba",
+    "UF": "2"
+  },
+  {
+    "id": "177",
+    "name": "Piranhas",
+    "UF": "2"
+  },
+  {
+    "id": "178",
+    "name": "Poço das Trincheiras",
+    "UF": "2"
+  },
+  {
+    "id": "179",
+    "name": "Porto Calvo",
+    "UF": "2"
+  },
+  {
+    "id": "180",
+    "name": "Porto de Pedras",
+    "UF": "2"
+  },
+  {
+    "id": "181",
+    "name": "Porto Real do Colégio",
+    "UF": "2"
+  },
+  {
+    "id": "182",
+    "name": "Quebrangulo",
+    "UF": "2"
+  },
+  {
+    "id": "183",
+    "name": "Rio Largo",
+    "UF": "2"
+  },
+  {
+    "id": "184",
+    "name": "Roteiro",
+    "UF": "2"
+  },
+  {
+    "id": "185",
+    "name": "Santa Luzia do Norte",
+    "UF": "2"
+  },
+  {
+    "id": "186",
+    "name": "Santana do Ipanema",
+    "UF": "2"
+  },
+  {
+    "id": "187",
+    "name": "Santana do Mundaú",
+    "UF": "2"
+  },
+  {
+    "id": "188",
+    "name": "São Brás",
+    "UF": "2"
+  },
+  {
+    "id": "189",
+    "name": "São José da Laje",
+    "UF": "2"
+  },
+  {
+    "id": "190",
+    "name": "São José da Tapera",
+    "UF": "2"
+  },
+  {
+    "id": "191",
+    "name": "São Luís do Quitunde",
+    "UF": "2"
+  },
+  {
+    "id": "192",
+    "name": "São Miguel dos Campos",
+    "UF": "2"
+  },
+  {
+    "id": "193",
+    "name": "São Miguel dos Milagres",
+    "UF": "2"
+  },
+  {
+    "id": "194",
+    "name": "São Sebastião",
+    "UF": "2"
+  },
+  {
+    "id": "195",
+    "name": "Satuba",
+    "UF": "2"
+  },
+  {
+    "id": "196",
+    "name": "Senador Rui Palmeira",
+    "UF": "2"
+  },
+  {
+    "id": "197",
+    "name": "Tanque d`Arca",
+    "UF": "2"
+  },
+  {
+    "id": "198",
+    "name": "Taquarana",
+    "UF": "2"
+  },
+  {
+    "id": "199",
+    "name": "Teotônio Vilela",
+    "UF": "2"
+  },
+  {
+    "id": "200",
+    "name": "Traipu",
+    "UF": "2"
+  },
+  {
+    "id": "201",
+    "name": "União dos Palmares",
+    "UF": "2"
+  },
+  {
+    "id": "202",
+    "name": "Viçosa",
+    "UF": "2"
+  }
+]

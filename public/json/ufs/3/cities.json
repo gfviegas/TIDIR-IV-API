@@ -1,0 +1,312 @@
+[
+  {
+    "id": "219",
+    "name": "Alvarães",
+    "UF": "3"
+  },
+  {
+    "id": "220",
+    "name": "Amaturá",
+    "UF": "3"
+  },
+  {
+    "id": "221",
+    "name": "Anamã",
+    "UF": "3"
+  },
+  {
+    "id": "222",
+    "name": "Anori",
+    "UF": "3"
+  },
+  {
+    "id": "223",
+    "name": "Apuí",
+    "UF": "3"
+  },
+  {
+    "id": "224",
+    "name": "Atalaia do Norte",
+    "UF": "3"
+  },
+  {
+    "id": "225",
+    "name": "Autazes",
+    "UF": "3"
+  },
+  {
+    "id": "226",
+    "name": "Barcelos",
+    "UF": "3"
+  },
+  {
+    "id": "227",
+    "name": "Barreirinha",
+    "UF": "3"
+  },
+  {
+    "id": "228",
+    "name": "Benjamin Constant",
+    "UF": "3"
+  },
+  {
+    "id": "229",
+    "name": "Beruri",
+    "UF": "3"
+  },
+  {
+    "id": "230",
+    "name": "Boa Vista do Ramos",
+    "UF": "3"
+  },
+  {
+    "id": "231",
+    "name": "Boca do Acre",
+    "UF": "3"
+  },
+  {
+    "id": "232",
+    "name": "Borba",
+    "UF": "3"
+  },
+  {
+    "id": "233",
+    "name": "Caapiranga",
+    "UF": "3"
+  },
+  {
+    "id": "234",
+    "name": "Canutama",
+    "UF": "3"
+  },
+  {
+    "id": "235",
+    "name": "Carauari",
+    "UF": "3"
+  },
+  {
+    "id": "236",
+    "name": "Careiro",
+    "UF": "3"
+  },
+  {
+    "id": "237",
+    "name": "Careiro da Várzea",
+    "UF": "3"
+  },
+  {
+    "id": "238",
+    "name": "Coari",
+    "UF": "3"
+  },
+  {
+    "id": "239",
+    "name": "Codajás",
+    "UF": "3"
+  },
+  {
+    "id": "240",
+    "name": "Eirunepé",
+    "UF": "3"
+  },
+  {
+    "id": "241",
+    "name": "Envira",
+    "UF": "3"
+  },
+  {
+    "id": "242",
+    "name": "Fonte Boa",
+    "UF": "3"
+  },
+  {
+    "id": "243",
+    "name": "Guajará",
+    "UF": "3"
+  },
+  {
+    "id": "244",
+    "name": "Humaitá",
+    "UF": "3"
+  },
+  {
+    "id": "245",
+    "name": "Ipixuna",
+    "UF": "3"
+  },
+  {
+    "id": "246",
+    "name": "Iranduba",
+    "UF": "3"
+  },
+  {
+    "id": "247",
+    "name": "Itacoatiara",
+    "UF": "3"
+  },
+  {
+    "id": "248",
+    "name": "Itamarati",
+    "UF": "3"
+  },
+  {
+    "id": "249",
+    "name": "Itapiranga",
+    "UF": "3"
+  },
+  {
+    "id": "250",
+    "name": "Japurá",
+    "UF": "3"
+  },
+  {
+    "id": "251",
+    "name": "Juruá",
+    "UF": "3"
+  },
+  {
+    "id": "252",
+    "name": "Jutaí",
+    "UF": "3"
+  },
+  {
+    "id": "253",
+    "name": "Lábrea",
+    "UF": "3"
+  },
+  {
+    "id": "254",
+    "name": "Manacapuru",
+    "UF": "3"
+  },
+  {
+    "id": "255",
+    "name": "Manaquiri",
+    "UF": "3"
+  },
+  {
+    "id": "256",
+    "name": "Manaus",
+    "UF": "3"
+  },
+  {
+    "id": "257",
+    "name": "Manicoré",
+    "UF": "3"
+  },
+  {
+    "id": "258",
+    "name": "Maraã",
+    "UF": "3"
+  },
+  {
+    "id": "259",
+    "name": "Maués",
+    "UF": "3"
+  },
+  {
+    "id": "260",
+    "name": "Nhamundá",
+    "UF": "3"
+  },
+  {
+    "id": "261",
+    "name": "Nova Olinda do Norte",
+    "UF": "3"
+  },
+  {
+    "id": "262",
+    "name": "Novo Airão",
+    "UF": "3"
+  },
+  {
+    "id": "263",
+    "name": "Novo Aripuanã",
+    "UF": "3"
+  },
+  {
+    "id": "264",
+    "name": "Parintins",
+    "UF": "3"
+  },
+  {
+    "id": "265",
+    "name": "Pauini",
+    "UF": "3"
+  },
+  {
+    "id": "266",
+    "name": "Presidente Figueiredo",
+    "UF": "3"
+  },
+  {
+    "id": "267",
+    "name": "Rio Preto da Eva",
+    "UF": "3"
+  },
+  {
+    "id": "268",
+    "name": "Santa Isabel do Rio Negro",
+    "UF": "3"
+  },
+  {
+    "id": "269",
+    "name": "Santo Antônio do Içá",
+    "UF": "3"
+  },
+  {
+    "id": "270",
+    "name": "São Gabriel da Cachoeira",
+    "UF": "3"
+  },
+  {
+    "id": "271",
+    "name": "São Paulo de Olivença",
+    "UF": "3"
+  },
+  {
+    "id": "272",
+    "name": "São Sebastião do Uatumã",
+    "UF": "3"
+  },
+  {
+    "id": "273",
+    "name": "Silves",
+    "UF": "3"
+  },
+  {
+    "id": "274",
+    "name": "Tabatinga",
+    "UF": "3"
+  },
+  {
+    "id": "275",
+    "name": "Tapauá",
+    "UF": "3"
+  },
+  {
+    "id": "276",
+    "name": "Tefé",
+    "UF": "3"
+  },
+  {
+    "id": "277",
+    "name": "Tonantins",
+    "UF": "3"
+  },
+  {
+    "id": "278",
+    "name": "Uarini",
+    "UF": "3"
+  },
+  {
+    "id": "279",
+    "name": "Urucará",
+    "UF": "3"
+  },
+  {
+    "id": "280",
+    "name": "Urucurituba",
+    "UF": "3"
+  }
+]

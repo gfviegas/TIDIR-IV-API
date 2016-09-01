@@ -1,0 +1,707 @@
+[
+  {
+    "id": "1346",
+    "name": "Acorizal",
+    "UF": "13"
+  },
+  {
+    "id": "1347",
+    "name": "Água Boa",
+    "UF": "13"
+  },
+  {
+    "id": "1348",
+    "name": "Alta Floresta",
+    "UF": "13"
+  },
+  {
+    "id": "1349",
+    "name": "Alto Araguaia",
+    "UF": "13"
+  },
+  {
+    "id": "1350",
+    "name": "Alto Boa Vista",
+    "UF": "13"
+  },
+  {
+    "id": "1351",
+    "name": "Alto Garças",
+    "UF": "13"
+  },
+  {
+    "id": "1352",
+    "name": "Alto Paraguai",
+    "UF": "13"
+  },
+  {
+    "id": "1353",
+    "name": "Alto Taquari",
+    "UF": "13"
+  },
+  {
+    "id": "1354",
+    "name": "Apiacás",
+    "UF": "13"
+  },
+  {
+    "id": "1355",
+    "name": "Araguaiana",
+    "UF": "13"
+  },
+  {
+    "id": "1356",
+    "name": "Araguainha",
+    "UF": "13"
+  },
+  {
+    "id": "1357",
+    "name": "Araputanga",
+    "UF": "13"
+  },
+  {
+    "id": "1358",
+    "name": "Arenápolis",
+    "UF": "13"
+  },
+  {
+    "id": "1359",
+    "name": "Aripuanã",
+    "UF": "13"
+  },
+  {
+    "id": "1360",
+    "name": "Barão de Melgaço",
+    "UF": "13"
+  },
+  {
+    "id": "1361",
+    "name": "Barra do Bugres",
+    "UF": "13"
+  },
+  {
+    "id": "1362",
+    "name": "Barra do Garças",
+    "UF": "13"
+  },
+  {
+    "id": "1363",
+    "name": "Bom Jesus do Araguaia",
+    "UF": "13"
+  },
+  {
+    "id": "1364",
+    "name": "Brasnorte",
+    "UF": "13"
+  },
+  {
+    "id": "1365",
+    "name": "Cáceres",
+    "UF": "13"
+  },
+  {
+    "id": "1366",
+    "name": "Campinápolis",
+    "UF": "13"
+  },
+  {
+    "id": "1367",
+    "name": "Campo Novo do Parecis",
+    "UF": "13"
+  },
+  {
+    "id": "1368",
+    "name": "Campo Verde",
+    "UF": "13"
+  },
+  {
+    "id": "1369",
+    "name": "Campos de Júlio",
+    "UF": "13"
+  },
+  {
+    "id": "1370",
+    "name": "Canabrava do Norte",
+    "UF": "13"
+  },
+  {
+    "id": "1371",
+    "name": "Canarana",
+    "UF": "13"
+  },
+  {
+    "id": "1372",
+    "name": "Carlinda",
+    "UF": "13"
+  },
+  {
+    "id": "1373",
+    "name": "Castanheira",
+    "UF": "13"
+  },
+  {
+    "id": "1374",
+    "name": "Chapada dos Guimarães",
+    "UF": "13"
+  },
+  {
+    "id": "1375",
+    "name": "Cláudia",
+    "UF": "13"
+  },
+  {
+    "id": "1376",
+    "name": "Cocalinho",
+    "UF": "13"
+  },
+  {
+    "id": "1377",
+    "name": "Colíder",
+    "UF": "13"
+  },
+  {
+    "id": "1378",
+    "name": "Colniza",
+    "UF": "13"
+  },
+  {
+    "id": "1379",
+    "name": "Comodoro",
+    "UF": "13"
+  },
+  {
+    "id": "1380",
+    "name": "Confresa",
+    "UF": "13"
+  },
+  {
+    "id": "1381",
+    "name": "Conquista d`Oeste",
+    "UF": "13"
+  },
+  {
+    "id": "1382",
+    "name": "Cotriguaçu",
+    "UF": "13"
+  },
+  {
+    "id": "1383",
+    "name": "Cuiabá",
+    "UF": "13"
+  },
+  {
+    "id": "1384",
+    "name": "Curvelândia",
+    "UF": "13"
+  },
+  {
+    "id": "1385",
+    "name": "Curvelândia",
+    "UF": "13"
+  },
+  {
+    "id": "1386",
+    "name": "Denise",
+    "UF": "13"
+  },
+  {
+    "id": "1387",
+    "name": "Diamantino",
+    "UF": "13"
+  },
+  {
+    "id": "1388",
+    "name": "Dom Aquino",
+    "UF": "13"
+  },
+  {
+    "id": "1389",
+    "name": "Feliz Natal",
+    "UF": "13"
+  },
+  {
+    "id": "1390",
+    "name": "Figueirópolis d`Oeste",
+    "UF": "13"
+  },
+  {
+    "id": "1391",
+    "name": "Gaúcha do Norte",
+    "UF": "13"
+  },
+  {
+    "id": "1392",
+    "name": "General Carneiro",
+    "UF": "13"
+  },
+  {
+    "id": "1393",
+    "name": "Glória d`Oeste",
+    "UF": "13"
+  },
+  {
+    "id": "1394",
+    "name": "Guarantã do Norte",
+    "UF": "13"
+  },
+  {
+    "id": "1395",
+    "name": "Guiratinga",
+    "UF": "13"
+  },
+  {
+    "id": "1396",
+    "name": "Indiavaí",
+    "UF": "13"
+  },
+  {
+    "id": "1397",
+    "name": "Ipiranga do Norte",
+    "UF": "13"
+  },
+  {
+    "id": "1398",
+    "name": "Itanhangá",
+    "UF": "13"
+  },
+  {
+    "id": "1399",
+    "name": "Itaúba",
+    "UF": "13"
+  },
+  {
+    "id": "1400",
+    "name": "Itiquira",
+    "UF": "13"
+  },
+  {
+    "id": "1401",
+    "name": "Jaciara",
+    "UF": "13"
+  },
+  {
+    "id": "1402",
+    "name": "Jangada",
+    "UF": "13"
+  },
+  {
+    "id": "1403",
+    "name": "Jauru",
+    "UF": "13"
+  },
+  {
+    "id": "1404",
+    "name": "Juara",
+    "UF": "13"
+  },
+  {
+    "id": "1405",
+    "name": "Juína",
+    "UF": "13"
+  },
+  {
+    "id": "1406",
+    "name": "Juruena",
+    "UF": "13"
+  },
+  {
+    "id": "1407",
+    "name": "Juscimeira",
+    "UF": "13"
+  },
+  {
+    "id": "1408",
+    "name": "Lambari d`Oeste",
+    "UF": "13"
+  },
+  {
+    "id": "1409",
+    "name": "Lucas do Rio Verde",
+    "UF": "13"
+  },
+  {
+    "id": "1410",
+    "name": "Luciára",
+    "UF": "13"
+  },
+  {
+    "id": "1411",
+    "name": "Marcelândia",
+    "UF": "13"
+  },
+  {
+    "id": "1412",
+    "name": "Matupá",
+    "UF": "13"
+  },
+  {
+    "id": "1413",
+    "name": "Mirassol d`Oeste",
+    "UF": "13"
+  },
+  {
+    "id": "1414",
+    "name": "Nobres",
+    "UF": "13"
+  },
+  {
+    "id": "1415",
+    "name": "Nortelândia",
+    "UF": "13"
+  },
+  {
+    "id": "1416",
+    "name": "Nossa Senhora do Livramento",
+    "UF": "13"
+  },
+  {
+    "id": "1417",
+    "name": "Nova Bandeirantes",
+    "UF": "13"
+  },
+  {
+    "id": "1418",
+    "name": "Nova Brasilândia",
+    "UF": "13"
+  },
+  {
+    "id": "1419",
+    "name": "Nova Canaã do Norte",
+    "UF": "13"
+  },
+  {
+    "id": "1420",
+    "name": "Nova Guarita",
+    "UF": "13"
+  },
+  {
+    "id": "1421",
+    "name": "Nova Lacerda",
+    "UF": "13"
+  },
+  {
+    "id": "1422",
+    "name": "Nova Marilândia",
+    "UF": "13"
+  },
+  {
+    "id": "1423",
+    "name": "Nova Maringá",
+    "UF": "13"
+  },
+  {
+    "id": "1424",
+    "name": "Nova Monte verde",
+    "UF": "13"
+  },
+  {
+    "id": "1425",
+    "name": "Nova Mutum",
+    "UF": "13"
+  },
+  {
+    "id": "1426",
+    "name": "Nova Olímpia",
+    "UF": "13"
+  },
+  {
+    "id": "1427",
+    "name": "Nova Santa Helena",
+    "UF": "13"
+  },
+  {
+    "id": "1428",
+    "name": "Nova Ubiratã",
+    "UF": "13"
+  },
+  {
+    "id": "1429",
+    "name": "Nova Xavantina",
+    "UF": "13"
+  },
+  {
+    "id": "1430",
+    "name": "Novo Horizonte do Norte",
+    "UF": "13"
+  },
+  {
+    "id": "1431",
+    "name": "Novo Mundo",
+    "UF": "13"
+  },
+  {
+    "id": "1432",
+    "name": "Novo Santo Antônio",
+    "UF": "13"
+  },
+  {
+    "id": "1433",
+    "name": "Novo São Joaquim",
+    "UF": "13"
+  },
+  {
+    "id": "1434",
+    "name": "Paranaíta",
+    "UF": "13"
+  },
+  {
+    "id": "1435",
+    "name": "Paranatinga",
+    "UF": "13"
+  },
+  {
+    "id": "1436",
+    "name": "Pedra Preta",
+    "UF": "13"
+  },
+  {
+    "id": "1437",
+    "name": "Peixoto de Azevedo",
+    "UF": "13"
+  },
+  {
+    "id": "1438",
+    "name": "Planalto da Serra",
+    "UF": "13"
+  },
+  {
+    "id": "1439",
+    "name": "Poconé",
+    "UF": "13"
+  },
+  {
+    "id": "1440",
+    "name": "Pontal do Araguaia",
+    "UF": "13"
+  },
+  {
+    "id": "1441",
+    "name": "Ponte Branca",
+    "UF": "13"
+  },
+  {
+    "id": "1442",
+    "name": "Pontes e Lacerda",
+    "UF": "13"
+  },
+  {
+    "id": "1443",
+    "name": "Porto Alegre do Norte",
+    "UF": "13"
+  },
+  {
+    "id": "1444",
+    "name": "Porto dos Gaúchos",
+    "UF": "13"
+  },
+  {
+    "id": "1445",
+    "name": "Porto Esperidião",
+    "UF": "13"
+  },
+  {
+    "id": "1446",
+    "name": "Porto Estrela",
+    "UF": "13"
+  },
+  {
+    "id": "1447",
+    "name": "Poxoréo",
+    "UF": "13"
+  },
+  {
+    "id": "1448",
+    "name": "Primavera do Leste",
+    "UF": "13"
+  },
+  {
+    "id": "1449",
+    "name": "Querência",
+    "UF": "13"
+  },
+  {
+    "id": "1450",
+    "name": "Reserva do Cabaçal",
+    "UF": "13"
+  },
+  {
+    "id": "1451",
+    "name": "Ribeirão Cascalheira",
+    "UF": "13"
+  },
+  {
+    "id": "1452",
+    "name": "Ribeirãozinho",
+    "UF": "13"
+  },
+  {
+    "id": "1453",
+    "name": "Rio Branco",
+    "UF": "13"
+  },
+  {
+    "id": "1454",
+    "name": "Rondolândia",
+    "UF": "13"
+  },
+  {
+    "id": "1455",
+    "name": "Rondonópolis",
+    "UF": "13"
+  },
+  {
+    "id": "1456",
+    "name": "Rosário Oeste",
+    "UF": "13"
+  },
+  {
+    "id": "1457",
+    "name": "Salto do Céu",
+    "UF": "13"
+  },
+  {
+    "id": "1458",
+    "name": "Santa Carmem",
+    "UF": "13"
+  },
+  {
+    "id": "1459",
+    "name": "Santa Cruz do Xingu",
+    "UF": "13"
+  },
+  {
+    "id": "1460",
+    "name": "Santa Rita do Trivelato",
+    "UF": "13"
+  },
+  {
+    "id": "1461",
+    "name": "Santa Terezinha",
+    "UF": "13"
+  },
+  {
+    "id": "1462",
+    "name": "Santo Afonso",
+    "UF": "13"
+  },
+  {
+    "id": "1463",
+    "name": "Santo Antônio do Leste",
+    "UF": "13"
+  },
+  {
+    "id": "1464",
+    "name": "Santo Antônio do Leverger",
+    "UF": "13"
+  },
+  {
+    "id": "1465",
+    "name": "São Félix do Araguaia",
+    "UF": "13"
+  },
+  {
+    "id": "1466",
+    "name": "São José do Povo",
+    "UF": "13"
+  },
+  {
+    "id": "1467",
+    "name": "São José do Rio Claro",
+    "UF": "13"
+  },
+  {
+    "id": "1468",
+    "name": "São José do Xingu",
+    "UF": "13"
+  },
+  {
+    "id": "1469",
+    "name": "São José dos Quatro Marcos",
+    "UF": "13"
+  },
+  {
+    "id": "1470",
+    "name": "São Pedro da Cipa",
+    "UF": "13"
+  },
+  {
+    "id": "1471",
+    "name": "Sapezal",
+    "UF": "13"
+  },
+  {
+    "id": "1472",
+    "name": "Serra Nova Dourada",
+    "UF": "13"
+  },
+  {
+    "id": "1473",
+    "name": "Sinop",
+    "UF": "13"
+  },
+  {
+    "id": "1474",
+    "name": "Sorriso",
+    "UF": "13"
+  },
+  {
+    "id": "1475",
+    "name": "Tabaporã",
+    "UF": "13"
+  },
+  {
+    "id": "1476",
+    "name": "Tangará da Serra",
+    "UF": "13"
+  },
+  {
+    "id": "1477",
+    "name": "Tapurah",
+    "UF": "13"
+  },
+  {
+    "id": "1478",
+    "name": "Terra Nova do Norte",
+    "UF": "13"
+  },
+  {
+    "id": "1479",
+    "name": "Tesouro",
+    "UF": "13"
+  },
+  {
+    "id": "1480",
+    "name": "Torixoréu",
+    "UF": "13"
+  },
+  {
+    "id": "1481",
+    "name": "União do Sul",
+    "UF": "13"
+  },
+  {
+    "id": "1482",
+    "name": "Vale de São Domingos",
+    "UF": "13"
+  },
+  {
+    "id": "1483",
+    "name": "Várzea Grande",
+    "UF": "13"
+  },
+  {
+    "id": "1484",
+    "name": "Vera",
+    "UF": "13"
+  },
+  {
+    "id": "1485",
+    "name": "Vila Bela da Santíssima Trindade",
+    "UF": "13"
+  },
+  {
+    "id": "1486",
+    "name": "Vila Rica",
+    "UF": "13"
+  }
+]

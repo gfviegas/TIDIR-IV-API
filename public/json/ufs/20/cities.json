@@ -1,0 +1,837 @@
+[
+  {
+    "id": "3683",
+    "name": "Acari",
+    "UF": "20"
+  },
+  {
+    "id": "3684",
+    "name": "Açu",
+    "UF": "20"
+  },
+  {
+    "id": "3685",
+    "name": "Afonso Bezerra",
+    "UF": "20"
+  },
+  {
+    "id": "3686",
+    "name": "Água Nova",
+    "UF": "20"
+  },
+  {
+    "id": "3687",
+    "name": "Alexandria",
+    "UF": "20"
+  },
+  {
+    "id": "3688",
+    "name": "Almino Afonso",
+    "UF": "20"
+  },
+  {
+    "id": "3689",
+    "name": "Alto do Rodrigues",
+    "UF": "20"
+  },
+  {
+    "id": "3690",
+    "name": "Angicos",
+    "UF": "20"
+  },
+  {
+    "id": "3691",
+    "name": "Antônio Martins",
+    "UF": "20"
+  },
+  {
+    "id": "3692",
+    "name": "Apodi",
+    "UF": "20"
+  },
+  {
+    "id": "3693",
+    "name": "Areia Branca",
+    "UF": "20"
+  },
+  {
+    "id": "3694",
+    "name": "Arês",
+    "UF": "20"
+  },
+  {
+    "id": "3695",
+    "name": "Augusto Severo",
+    "UF": "20"
+  },
+  {
+    "id": "3696",
+    "name": "Baía Formosa",
+    "UF": "20"
+  },
+  {
+    "id": "3697",
+    "name": "Baraúna",
+    "UF": "20"
+  },
+  {
+    "id": "3698",
+    "name": "Barcelona",
+    "UF": "20"
+  },
+  {
+    "id": "3699",
+    "name": "Bento Fernandes",
+    "UF": "20"
+  },
+  {
+    "id": "3700",
+    "name": "Bodó",
+    "UF": "20"
+  },
+  {
+    "id": "3701",
+    "name": "Bom Jesus",
+    "UF": "20"
+  },
+  {
+    "id": "3702",
+    "name": "Brejinho",
+    "UF": "20"
+  },
+  {
+    "id": "3703",
+    "name": "Caiçara do Norte",
+    "UF": "20"
+  },
+  {
+    "id": "3704",
+    "name": "Caiçara do Rio do Vento",
+    "UF": "20"
+  },
+  {
+    "id": "3705",
+    "name": "Caicó",
+    "UF": "20"
+  },
+  {
+    "id": "3706",
+    "name": "Campo Redondo",
+    "UF": "20"
+  },
+  {
+    "id": "3707",
+    "name": "Canguaretama",
+    "UF": "20"
+  },
+  {
+    "id": "3708",
+    "name": "Caraúbas",
+    "UF": "20"
+  },
+  {
+    "id": "3709",
+    "name": "Carnaúba dos Dantas",
+    "UF": "20"
+  },
+  {
+    "id": "3710",
+    "name": "Carnaubais",
+    "UF": "20"
+  },
+  {
+    "id": "3711",
+    "name": "Ceará-Mirim",
+    "UF": "20"
+  },
+  {
+    "id": "3712",
+    "name": "Cerro Corá",
+    "UF": "20"
+  },
+  {
+    "id": "3713",
+    "name": "Coronel Ezequiel",
+    "UF": "20"
+  },
+  {
+    "id": "3714",
+    "name": "Coronel João Pessoa",
+    "UF": "20"
+  },
+  {
+    "id": "3715",
+    "name": "Cruzeta",
+    "UF": "20"
+  },
+  {
+    "id": "3716",
+    "name": "Currais Novos",
+    "UF": "20"
+  },
+  {
+    "id": "3717",
+    "name": "Doutor Severiano",
+    "UF": "20"
+  },
+  {
+    "id": "3718",
+    "name": "Encanto",
+    "UF": "20"
+  },
+  {
+    "id": "3719",
+    "name": "Equador",
+    "UF": "20"
+  },
+  {
+    "id": "3720",
+    "name": "Espírito Santo",
+    "UF": "20"
+  },
+  {
+    "id": "3721",
+    "name": "Extremoz",
+    "UF": "20"
+  },
+  {
+    "id": "3722",
+    "name": "Felipe Guerra",
+    "UF": "20"
+  },
+  {
+    "id": "3723",
+    "name": "Fernando Pedroza",
+    "UF": "20"
+  },
+  {
+    "id": "3724",
+    "name": "Florânia",
+    "UF": "20"
+  },
+  {
+    "id": "3725",
+    "name": "Francisco Dantas",
+    "UF": "20"
+  },
+  {
+    "id": "3726",
+    "name": "Frutuoso Gomes",
+    "UF": "20"
+  },
+  {
+    "id": "3727",
+    "name": "Galinhos",
+    "UF": "20"
+  },
+  {
+    "id": "3728",
+    "name": "Goianinha",
+    "UF": "20"
+  },
+  {
+    "id": "3729",
+    "name": "Governador Dix-Sept Rosado",
+    "UF": "20"
+  },
+  {
+    "id": "3730",
+    "name": "Grossos",
+    "UF": "20"
+  },
+  {
+    "id": "3731",
+    "name": "Guamaré",
+    "UF": "20"
+  },
+  {
+    "id": "3732",
+    "name": "Ielmo Marinho",
+    "UF": "20"
+  },
+  {
+    "id": "3733",
+    "name": "Ipanguaçu",
+    "UF": "20"
+  },
+  {
+    "id": "3734",
+    "name": "Ipueira",
+    "UF": "20"
+  },
+  {
+    "id": "3735",
+    "name": "Itajá",
+    "UF": "20"
+  },
+  {
+    "id": "3736",
+    "name": "Itaú",
+    "UF": "20"
+  },
+  {
+    "id": "3737",
+    "name": "Jaçanã",
+    "UF": "20"
+  },
+  {
+    "id": "3738",
+    "name": "Jandaíra",
+    "UF": "20"
+  },
+  {
+    "id": "3739",
+    "name": "Janduís",
+    "UF": "20"
+  },
+  {
+    "id": "3740",
+    "name": "Januário Cicco",
+    "UF": "20"
+  },
+  {
+    "id": "3741",
+    "name": "Japi",
+    "UF": "20"
+  },
+  {
+    "id": "3742",
+    "name": "Jardim de Angicos",
+    "UF": "20"
+  },
+  {
+    "id": "3743",
+    "name": "Jardim de Piranhas",
+    "UF": "20"
+  },
+  {
+    "id": "3744",
+    "name": "Jardim do Seridó",
+    "UF": "20"
+  },
+  {
+    "id": "3745",
+    "name": "João Câmara",
+    "UF": "20"
+  },
+  {
+    "id": "3746",
+    "name": "João Dias",
+    "UF": "20"
+  },
+  {
+    "id": "3747",
+    "name": "José da Penha",
+    "UF": "20"
+  },
+  {
+    "id": "3748",
+    "name": "Jucurutu",
+    "UF": "20"
+  },
+  {
+    "id": "3749",
+    "name": "Jundiá",
+    "UF": "20"
+  },
+  {
+    "id": "3750",
+    "name": "Lagoa d`Anta",
+    "UF": "20"
+  },
+  {
+    "id": "3751",
+    "name": "Lagoa de Pedras",
+    "UF": "20"
+  },
+  {
+    "id": "3752",
+    "name": "Lagoa de Velhos",
+    "UF": "20"
+  },
+  {
+    "id": "3753",
+    "name": "Lagoa Nova",
+    "UF": "20"
+  },
+  {
+    "id": "3754",
+    "name": "Lagoa Salgada",
+    "UF": "20"
+  },
+  {
+    "id": "3755",
+    "name": "Lajes",
+    "UF": "20"
+  },
+  {
+    "id": "3756",
+    "name": "Lajes Pintadas",
+    "UF": "20"
+  },
+  {
+    "id": "3757",
+    "name": "Lucrécia",
+    "UF": "20"
+  },
+  {
+    "id": "3758",
+    "name": "Luís Gomes",
+    "UF": "20"
+  },
+  {
+    "id": "3759",
+    "name": "Macaíba",
+    "UF": "20"
+  },
+  {
+    "id": "3760",
+    "name": "Macau",
+    "UF": "20"
+  },
+  {
+    "id": "3761",
+    "name": "Major Sales",
+    "UF": "20"
+  },
+  {
+    "id": "3762",
+    "name": "Marcelino Vieira",
+    "UF": "20"
+  },
+  {
+    "id": "3763",
+    "name": "Martins",
+    "UF": "20"
+  },
+  {
+    "id": "3764",
+    "name": "Maxaranguape",
+    "UF": "20"
+  },
+  {
+    "id": "3765",
+    "name": "Messias Targino",
+    "UF": "20"
+  },
+  {
+    "id": "3766",
+    "name": "Montanhas",
+    "UF": "20"
+  },
+  {
+    "id": "3767",
+    "name": "Monte Alegre",
+    "UF": "20"
+  },
+  {
+    "id": "3768",
+    "name": "Monte das Gameleiras",
+    "UF": "20"
+  },
+  {
+    "id": "3769",
+    "name": "Mossoró",
+    "UF": "20"
+  },
+  {
+    "id": "3770",
+    "name": "Natal",
+    "UF": "20"
+  },
+  {
+    "id": "3771",
+    "name": "Nísia Floresta",
+    "UF": "20"
+  },
+  {
+    "id": "3772",
+    "name": "Nova Cruz",
+    "UF": "20"
+  },
+  {
+    "id": "3773",
+    "name": "Olho-d`Água do Borges",
+    "UF": "20"
+  },
+  {
+    "id": "3774",
+    "name": "Ouro Branco",
+    "UF": "20"
+  },
+  {
+    "id": "3775",
+    "name": "Paraná",
+    "UF": "20"
+  },
+  {
+    "id": "3776",
+    "name": "Paraú",
+    "UF": "20"
+  },
+  {
+    "id": "3777",
+    "name": "Parazinho",
+    "UF": "20"
+  },
+  {
+    "id": "3778",
+    "name": "Parelhas",
+    "UF": "20"
+  },
+  {
+    "id": "3779",
+    "name": "Parnamirim",
+    "UF": "20"
+  },
+  {
+    "id": "3780",
+    "name": "Passa e Fica",
+    "UF": "20"
+  },
+  {
+    "id": "3781",
+    "name": "Passagem",
+    "UF": "20"
+  },
+  {
+    "id": "3782",
+    "name": "Patu",
+    "UF": "20"
+  },
+  {
+    "id": "3783",
+    "name": "Pau dos Ferros",
+    "UF": "20"
+  },
+  {
+    "id": "3784",
+    "name": "Pedra Grande",
+    "UF": "20"
+  },
+  {
+    "id": "3785",
+    "name": "Pedra Preta",
+    "UF": "20"
+  },
+  {
+    "id": "3786",
+    "name": "Pedro Avelino",
+    "UF": "20"
+  },
+  {
+    "id": "3787",
+    "name": "Pedro Velho",
+    "UF": "20"
+  },
+  {
+    "id": "3788",
+    "name": "Pendências",
+    "UF": "20"
+  },
+  {
+    "id": "3789",
+    "name": "Pilões",
+    "UF": "20"
+  },
+  {
+    "id": "3790",
+    "name": "Poço Branco",
+    "UF": "20"
+  },
+  {
+    "id": "3791",
+    "name": "Portalegre",
+    "UF": "20"
+  },
+  {
+    "id": "3792",
+    "name": "Porto do Mangue",
+    "UF": "20"
+  },
+  {
+    "id": "3793",
+    "name": "Presidente Juscelino",
+    "UF": "20"
+  },
+  {
+    "id": "3794",
+    "name": "Pureza",
+    "UF": "20"
+  },
+  {
+    "id": "3795",
+    "name": "Rafael Fernandes",
+    "UF": "20"
+  },
+  {
+    "id": "3796",
+    "name": "Rafael Godeiro",
+    "UF": "20"
+  },
+  {
+    "id": "3797",
+    "name": "Riacho da Cruz",
+    "UF": "20"
+  },
+  {
+    "id": "3798",
+    "name": "Riacho de Santana",
+    "UF": "20"
+  },
+  {
+    "id": "3799",
+    "name": "Riachuelo",
+    "UF": "20"
+  },
+  {
+    "id": "3800",
+    "name": "Rio do Fogo",
+    "UF": "20"
+  },
+  {
+    "id": "3801",
+    "name": "Rodolfo Fernandes",
+    "UF": "20"
+  },
+  {
+    "id": "3802",
+    "name": "Ruy Barbosa",
+    "UF": "20"
+  },
+  {
+    "id": "3803",
+    "name": "Santa Cruz",
+    "UF": "20"
+  },
+  {
+    "id": "3804",
+    "name": "Santa Maria",
+    "UF": "20"
+  },
+  {
+    "id": "3805",
+    "name": "Santana do Matos",
+    "UF": "20"
+  },
+  {
+    "id": "3806",
+    "name": "Santana do Seridó",
+    "UF": "20"
+  },
+  {
+    "id": "3807",
+    "name": "Santo Antônio",
+    "UF": "20"
+  },
+  {
+    "id": "3808",
+    "name": "São Bento do Norte",
+    "UF": "20"
+  },
+  {
+    "id": "3809",
+    "name": "São Bento do Trairí",
+    "UF": "20"
+  },
+  {
+    "id": "3810",
+    "name": "São Fernando",
+    "UF": "20"
+  },
+  {
+    "id": "3811",
+    "name": "São Francisco do Oeste",
+    "UF": "20"
+  },
+  {
+    "id": "3812",
+    "name": "São Gonçalo do Amarante",
+    "UF": "20"
+  },
+  {
+    "id": "3813",
+    "name": "São João do Sabugi",
+    "UF": "20"
+  },
+  {
+    "id": "3814",
+    "name": "São José de Mipibu",
+    "UF": "20"
+  },
+  {
+    "id": "3815",
+    "name": "São José do Campestre",
+    "UF": "20"
+  },
+  {
+    "id": "3816",
+    "name": "São José do Seridó",
+    "UF": "20"
+  },
+  {
+    "id": "3817",
+    "name": "São Miguel",
+    "UF": "20"
+  },
+  {
+    "id": "3818",
+    "name": "São Miguel do Gostoso",
+    "UF": "20"
+  },
+  {
+    "id": "3819",
+    "name": "São Paulo do Potengi",
+    "UF": "20"
+  },
+  {
+    "id": "3820",
+    "name": "São Pedro",
+    "UF": "20"
+  },
+  {
+    "id": "3821",
+    "name": "São Rafael",
+    "UF": "20"
+  },
+  {
+    "id": "3822",
+    "name": "São Tomé",
+    "UF": "20"
+  },
+  {
+    "id": "3823",
+    "name": "São Vicente",
+    "UF": "20"
+  },
+  {
+    "id": "3824",
+    "name": "Senador Elói de Souza",
+    "UF": "20"
+  },
+  {
+    "id": "3825",
+    "name": "Senador Georgino Avelino",
+    "UF": "20"
+  },
+  {
+    "id": "3826",
+    "name": "Serra de São Bento",
+    "UF": "20"
+  },
+  {
+    "id": "3827",
+    "name": "Serra do Mel",
+    "UF": "20"
+  },
+  {
+    "id": "3828",
+    "name": "Serra Negra do Norte",
+    "UF": "20"
+  },
+  {
+    "id": "3829",
+    "name": "Serrinha",
+    "UF": "20"
+  },
+  {
+    "id": "3830",
+    "name": "Serrinha dos Pintos",
+    "UF": "20"
+  },
+  {
+    "id": "3831",
+    "name": "Severiano Melo",
+    "UF": "20"
+  },
+  {
+    "id": "3832",
+    "name": "Sítio Novo",
+    "UF": "20"
+  },
+  {
+    "id": "3833",
+    "name": "Taboleiro Grande",
+    "UF": "20"
+  },
+  {
+    "id": "3834",
+    "name": "Taipu",
+    "UF": "20"
+  },
+  {
+    "id": "3835",
+    "name": "Tangará",
+    "UF": "20"
+  },
+  {
+    "id": "3836",
+    "name": "Tenente Ananias",
+    "UF": "20"
+  },
+  {
+    "id": "3837",
+    "name": "Tenente Laurentino Cruz",
+    "UF": "20"
+  },
+  {
+    "id": "3838",
+    "name": "Tibau",
+    "UF": "20"
+  },
+  {
+    "id": "3839",
+    "name": "Tibau do Sul",
+    "UF": "20"
+  },
+  {
+    "id": "3840",
+    "name": "Timbaúba dos Batistas",
+    "UF": "20"
+  },
+  {
+    "id": "3841",
+    "name": "Touros",
+    "UF": "20"
+  },
+  {
+    "id": "3842",
+    "name": "Triunfo Potiguar",
+    "UF": "20"
+  },
+  {
+    "id": "3843",
+    "name": "Umarizal",
+    "UF": "20"
+  },
+  {
+    "id": "3844",
+    "name": "Upanema",
+    "UF": "20"
+  },
+  {
+    "id": "3845",
+    "name": "Várzea",
+    "UF": "20"
+  },
+  {
+    "id": "3846",
+    "name": "Venha-Ver",
+    "UF": "20"
+  },
+  {
+    "id": "3847",
+    "name": "Vera Cruz",
+    "UF": "20"
+  },
+  {
+    "id": "3848",
+    "name": "Viçosa",
+    "UF": "20"
+  },
+  {
+    "id": "3849",
+    "name": "Vila Flor",
+    "UF": "20"
+  }
+]
