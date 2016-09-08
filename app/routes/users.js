@@ -26,7 +26,7 @@ router.get('/check/:email', (req, res) => {
 router.get('/', (req, res) => {
   User.find((err, users) => {
     if (err) throw err;
-    res.json(users);
+    res.status(200).json(users);
   });
 });
 
@@ -51,12 +51,13 @@ router.post('/', (req, res) => {
   let errors = req.validationErrors();
 
   if (errors) {
-    res.json(errors, 422);
+    res.status(422).json(errors);
   } else {
     let newUser = new User(req.body);
     newUser.save(err => {
       if (err) throw err;
-      res.json(newUser, 201);
+
+      res.status(201).json(newUser);
     });
   }
 });
@@ -69,11 +70,11 @@ router.put('/:id', jwt({secret: process.env.APP_SECRET}), (req, res) => {
   let errors = req.validationErrors();
 
   if (errors) {
-    res.json(errors, 422);
+    res.status(422).json(errors);
   } else {
     User.findOneAndUpdate({_id: req.params.id}, {$set: req.body}, {new: true}, (err, user) => {
       if (err) throw err;
-      res.json(user, 200);
+      res.status(200).json(user);
     });
   }
 });
@@ -86,7 +87,7 @@ router.delete('/:id', jwt({secret: process.env.APP_SECRET}), (req, res) => {
   let errors = req.validationErrors();
 
   if (errors) {
-    res.json(errors, 422);
+    res.status(422).json(errors);
   } else {
     User.find({_id: req.params.id}).remove(err => {
       if (err) throw err;
