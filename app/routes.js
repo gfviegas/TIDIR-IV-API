@@ -15,8 +15,9 @@ router.get('/', (req, res) => {
   res.send('api works!');
 });
 
-router.use('/users', require('./routes/users'));
 router.use('/auth', require('./routes/auth'));
+router.use('/users', require('./routes/users'));
+router.use('/sellers', require('./routes/sellers'));
 
 // User.methods(['get', 'put', 'post', 'delete']);
 // User.register(router, '/users');
