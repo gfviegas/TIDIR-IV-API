@@ -1,5 +1,6 @@
 let mongoose = require('mongoose');
 let seeder = require('mongoose-seeder');
+let bcrypt = require('bcrypt');
 
 let User = require('./app/models/Users');
 let users = require('./seeders/users.json');

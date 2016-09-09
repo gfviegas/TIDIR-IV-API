@@ -5,6 +5,10 @@ let bodyParser = require('body-parser');
 let expressValidator = require('express-validator');
 let cors = require('cors');
 
+// bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash) {
+//   // Store hash in your password DB.
+// });
+
 require('dotenv').config();
 
 // MongoDB

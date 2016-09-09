@@ -1,10 +1,13 @@
 {
+  "_dependencies": {
+    "bcrypt": "bcrypt"
+  },
   "users": {
     "_model": "Users",
     "gustavo": {
       "name": "Gustavo Viegas",
       "email": "teste@teste.com",
-      "password": "teste",
+      "password": "=bcrypt.hashSync('teste', 10)",
       "location": {
         "city": "Betim",
         "state": "MG"
@@ -18,7 +21,7 @@
     "silvio": {
       "name": "Silvio Santos",
       "email": "silvio@teste.com",
-      "password": "teste",
+      "password": "=bcrypt.hashSync('teste', 10)",
       "location": {
         "city": "Betim",
         "state": "MG"

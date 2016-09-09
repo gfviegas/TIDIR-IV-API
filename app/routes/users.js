@@ -1,6 +1,7 @@
 let router = require('express').Router();
 let User = require('../models/Users');
 let jwt = require('express-jwt');
+let bcrypt = require('bcrypt');
 
 /**
  * Check if there is an email registred
@@ -54,10 +55,14 @@ router.post('/', (req, res) => {
     res.status(422).json(errors);
   } else {
     let newUser = new User(req.body);
-    newUser.save(err => {
+    console.info(newUser);
+    bcrypt.hash(newUser.password, 10, function(err, hash) {
       if (err) throw err;
-
-      res.status(201).json(newUser);
+      newUser.password = hash;
+      newUser.save(err => {
+        if (err) throw err;
+        res.status(201).json(newUser);
+      });
     });
   }
 });
