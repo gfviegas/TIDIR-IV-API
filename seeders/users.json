@@ -7,6 +7,10 @@
     "doces": {
       "name": "Doces",
       "type": "Alimentos"
+    },
+    "salgados": {
+      "name": "Salgados",
+      "type": "Alimentos"
     }
   },
   "sellers" : {
@@ -16,6 +20,7 @@
       "email": "seller@seller.com",
       "password": "=bcrypt.hashSync('seller', 10)",
       "category": "->categories.doces",
+      "photo": "yao.jpg",
       "location": {
         "city": "Betim",
         "state": "MG"
@@ -24,6 +29,30 @@
         "whatsapp": "31 99251 4251",
         "facebook": "gustavofviegas",
         "phone": "31 3595 7005"
+      }
+    },
+    "turco": {
+      "name": "Turco Klataperr",
+      "email": "turco@turco.com",
+      "password": "=bcrypt.hashSync('turco', 10)",
+      "category": "->categories.doces",
+      "photo": "aminu.jpg",
+      "location": {
+        "city": "Betim",
+        "state": "MG"
+      }
+    },
+    "carlton": {
+      "name": "Carlton Dancer",
+      "email": "carlton@carlton.com",
+      "password": "=bcrypt.hashSync('carlton', 10)",
+      "category": "->categories.salgados",
+      "location": {
+        "city": "Contagem",
+        "state": "MG"
+      },
+      "contact": {
+        "whatsapp": "31 99251 4251"
       }
     }
   },
