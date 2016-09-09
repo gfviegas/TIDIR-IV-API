@@ -27,7 +27,7 @@ router.post('/user', (req, res) => {
             sub: user.id
           };
           let options = {
-            expiresIn: '15m',
+            expiresIn: '30d',
             issuer: 'TIDIR APP'
           };
           let token = jwt.sign(payload, process.env.APP_SECRET, options);
@@ -59,7 +59,7 @@ router.post('/seller', (req, res) => {
           sub: user.id
         };
         let options = {
-          expiresIn: '15m',
+          expiresIn: '30d',
           issuer: 'TIDIR APP'
         };
         let token = jwt.sign(payload, process.env.APP_SECRET, options);
