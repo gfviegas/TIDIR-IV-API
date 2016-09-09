@@ -2,6 +2,31 @@
   "_dependencies": {
     "bcrypt": "bcrypt"
   },
+  "categories": {
+    "_model": "Categories",
+    "doces": {
+      "name": "Doces",
+      "type": "Alimentos"
+    }
+  },
+  "sellers" : {
+    "_model": "Sellers",
+    "toninho": {
+      "name": "Toninho Vendedor",
+      "email": "seller@seller.com",
+      "password": "=bcrypt.hashSync('seller', 10)",
+      "category": "->categories.doces",
+      "location": {
+        "city": "Betim",
+        "state": "MG"
+      },
+      "contact": {
+        "whatsapp": "31 99251 4251",
+        "facebook": "gustavofviegas",
+        "phone": "31 3595 7005"
+      }
+    }
+  },
   "users": {
     "_model": "Users",
     "gustavo": {
@@ -16,7 +41,8 @@
         "whatsapp": "31 99251 4251",
         "facebook": "gustavofviegas",
         "phone": "31 3595 7005"
-      }
+      },
+      "followedSellers": ["->sellers.toninho"]
     },
     "silvio": {
       "name": "Silvio Santos",

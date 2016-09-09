@@ -3,6 +3,8 @@ let seeder = require('mongoose-seeder');
 let bcrypt = require('bcrypt');
 
 let User = require('./app/models/Users');
+let Sellers = require('./app/models/Sellers');
+let Categories = require('./app/models/Categories');
 let users = require('./seeders/users.json');
 
 require('dotenv').config();

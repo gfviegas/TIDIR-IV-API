@@ -1,5 +1,6 @@
 // Dependencies
 let mongoose = require('mongoose');
+let categories = require('./Categories');
 
 // Schema
 let sellerSchema = new mongoose.Schema({
@@ -12,6 +13,7 @@ let sellerSchema = new mongoose.Schema({
     state: { type: String, required: true }
   },
   photo: { type: String, default: 'person.jpeg' },
+  category: { type: mongoose.Schema.Types.ObjectId, ref: 'categories'},
   contact: {
     whatsapp: { type: String },
     facebook: { type: String },
