@@ -16,4 +16,4 @@ API para o Aplicativo do TIDIR IV
 - Para iniciar a API é só rodar `nodemon index.js`
 
 ### Alimentar Banco de Dados
-Para rodar os seeds e iniciar o banco com dados inicias é só rodar `node seeder.js`
+Para rodar os seeds e iniciar o banco com dados inicias é só rodar `node seeders/seeder.js`

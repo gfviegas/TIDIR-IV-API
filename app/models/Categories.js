@@ -5,7 +5,7 @@ let mongoose = require('mongoose');
 // Schema
 let categoriesSchema = new mongoose.Schema({
   name: {type: String, required: true, unique: true},
-  type: { type: String, required: true }
+  subcategories: [{type: String}]
 });
 
 // Return model

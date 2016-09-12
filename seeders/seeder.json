@@ -2,17 +2,66 @@
   "_dependencies": {
     "bcrypt": "bcrypt"
   },
+
   "categories": {
     "_model": "Categories",
-    "doces": {
-      "name": "Doces",
-      "type": "Alimentos"
+    "alimentos": {
+      "name": "Alimentos",
+      "subcategories": [
+        "Guloseimas",
+        "Lanches",
+        "Hortifruti",
+        "Refeições"
+      ]
     },
-    "salgados": {
-      "name": "Salgados",
-      "type": "Alimentos"
+    "limpeza": {
+      "name": "Utensílios de Limpeza",
+      "subcategories": [
+        "Produtos de Limpeza",
+        "Equipamentos de Limpeza"
+      ]
+    },
+    "cozinha": {
+      "name": "Cozinha",
+      "subcategories": [
+        "Utensílios de Cozinha"
+      ]
+    },
+    "artesanais": {
+      "name": "Artesanais",
+      "subcategories": [
+        "Acessórios",
+        "Desenhos e Pinturas",
+        "Artigos Religiosos",
+        "Decoração",
+        "Tapeçaria"
+      ]
+    },
+    "cosmeticos": {
+      "name": "Cosméticos",
+      "subcategories": [
+        "Perfumes",
+        "Sabonetes",
+        "Maquiagem",
+        "Esmaltes",
+        "Produtos para Cabelo",
+        "Cremes"
+      ]
+    },
+    "vestuario": {
+      "name": "Vestuário",
+      "subcategories": [
+        "Camisas",
+        "Calças",
+        "Bermudas",
+        "Agasalhos",
+        "Roupas de Banho",
+        "Roupas Íntimas",
+        "Acessórios"
+      ]
     }
   },
+
   "sellers" : {
     "_model": "Sellers",
     "toninho": {
@@ -56,6 +105,7 @@
       }
     }
   },
+
   "users": {
     "_model": "Users",
     "gustavo": {
@@ -88,4 +138,5 @@
       }
     }
   }
+
 }
