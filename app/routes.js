@@ -17,8 +17,9 @@ router.get('/', (req, res) => {
 
 router.use('/auth', require('./routes/auth'));
 router.use('/users', require('./routes/users'));
-router.use('/sellers', require('./routes/sellers'));
 router.use('/categories', require('./routes/categories'));
+router.use('/sellers', require('./routes/sellers'));
+router.use('/products', require('./routes/products'));
 
 // User.methods(['get', 'put', 'post', 'delete']);
 // User.register(router, '/users');

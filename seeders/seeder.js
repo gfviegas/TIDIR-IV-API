@@ -2,9 +2,10 @@ let mongoose = require('mongoose');
 let seeder = require('mongoose-seeder');
 let bcrypt = require('bcrypt');
 
-let User = require('../app/models/Users');
-let Sellers = require('../app/models/Sellers');
-let Categories = require('../app/models/Categories');
+require('../app/models/Users');
+require('../app/models/Sellers');
+require('../app/models/Categories');
+require('../app/models/Products');
 let seedData = require('./seeder.json');
 
 require('dotenv').config();

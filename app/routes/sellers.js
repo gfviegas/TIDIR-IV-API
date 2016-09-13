@@ -1,5 +1,6 @@
 let router = require('express').Router();
 let Seller = require('../models/Sellers');
+let Products = require('../models/Products');
 let jwt = require('express-jwt');
 let bcrypt = require('bcrypt');
 
@@ -59,6 +60,19 @@ router.get('/:id', (req, res) => {
     if (err) throw err;
     res.json(seller);
   });
+});
+
+/**
+ * Get products by a seller
+ */
+router.get('/:id/products', (req, res) => {
+  Products
+    .find({seller: req.params.id})
+    .select('-seller')
+    .exec((err, products) => {
+      if (err) throw err;
+      res.json(products);
+    });
 });
 
 /**
