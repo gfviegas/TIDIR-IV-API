@@ -9,17 +9,19 @@ let bcrypt = require('bcrypt');
  */
 router.get('/check/:email', (req, res) => {
   req.checkParams('email', 'invalid').notEmpty();
-  Seller.findOne({
-    email: req.params.email
-  }, (err, seller) => {
-    if (err) throw err;
+  Seller
+    .findOne({
+      email: req.params.email
+    })
+    .exec((err, seller) => {
+      if (err) throw err;
 
-    if (!seller) {
-      res.status(200).json({ taken: false });
-    } else {
-      res.status(200).json({ taken: true });
-    }
-  });
+      if (!seller) {
+        res.status(200).json({ taken: false });
+      } else {
+        res.status(200).json({ taken: true });
+      }
+    });
 });
 
 /**
@@ -46,20 +48,24 @@ router.get('/', (req, res) => {
     }
   }
 
-  Seller.find(filters, null, sort, (err, sellers) => {
-    if (err) throw err;
-    res.status(200).json(sellers);
-  });
+  Seller
+    .find(filters, null, sort)
+    .exec((err, sellers) => {
+      if (err) throw err;
+      res.status(200).json(sellers);
+    });
 });
 
 /**
  * Get seller by Id
  */
 router.get('/:id', (req, res) => {
-  Seller.findById(req.params.id, (err, seller) => {
-    if (err) throw err;
-    res.json(seller);
-  });
+  Seller
+    .findById(req.params.id)
+    .exec((err, seller) => {
+      if (err) throw err;
+      res.json(seller);
+    });
 });
 
 /**

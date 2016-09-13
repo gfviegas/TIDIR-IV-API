@@ -1,21 +1,30 @@
 let router = require('express').Router();
-let Categories = require('../models/Categories');
+let Products = require('../models/Products');
 
 /**
  * Get all products by a seller
  */
 router.get('/', (req, res) => {
-  res.json({success: true});
+  Products
+    .find()
+    .populate('seller', '-updatedAt -createdAt -email -category -location -photo')
+    .exec((err, products) => {
+      if (err) throw err;
+      res.status(200).json(products);
+    });
 });
 
 /**
  * Get Category by Id
  */
 router.get('/:id', (req, res) => {
-  Categories.findById(req.params.id, (err, category) => {
-    if (err) throw err;
-    res.json(category);
-  });
+  Products
+    .findById(req.params.id)
+    .populate('seller', '-updatedAt -createdAt -email -category -location')
+    .exec((err, category) => {
+      if (err) throw err;
+      res.json(category);
+    });
 });
 
 module.exports = router;
