@@ -25,17 +25,30 @@ router.get('/check/:email', (req, res) => {
  * Get all sellers
  */
 router.get('/', (req, res) => {
+  let filters = {};
+  let sort = {sort: 'date'};
+
   if (req.query) {
-    Seller.find({name:  new RegExp(req.query.name, 'i')}, (err, sellers) => {
-      if (err) throw err;
-      res.status(200).json(sellers);
-    });
-  } else {
-    Seller.find((err, sellers) => {
-      if (err) throw err;
-      res.status(200).json(sellers);
-    });
+    if (req.query.name) {
+      filters['name'] = new RegExp(req.query.name, 'i');
+    }
+    if (req.query.category) {
+      filters['category'] = new RegExp(req.query.category, 'i');
+    }
+    if (req.query.onlyFollowedSellers) {
+      /**
+       * TODO: Logica pra so pegar seguidores
+       */
+    }
+    if (req.query.sort) {
+      sort = {sort: req.query.sort};
+    }
   }
+
+  Seller.find(filters, null, sort, (err, sellers) => {
+    if (err) throw err;
+    res.status(200).json(sellers);
+  });
 });
 
 /**
@@ -63,7 +76,7 @@ router.post('/', (req, res) => {
   } else {
     let newSeller = new Seller(req.body);
     console.info(newSeller);
-    bcrypt.hash(newSeller.password, 10, function(err, hash) {
+    bcrypt.hash(newSeller.password, 10, function (err, hash) {
       if (err) throw err;
       newSeller.password = hash;
       newSeller.save(err => {

@@ -30,7 +30,7 @@
     "artesanais": {
       "name": "Artesanais",
       "subcategories": [
-        "Acessórios",
+        "Acessórios Artesanais",
         "Desenhos e Pinturas",
         "Artigos Religiosos",
         "Decoração",
@@ -68,7 +68,7 @@
       "name": "Toninho Vendedor",
       "email": "seller@seller.com",
       "password": "=bcrypt.hashSync('seller', 10)",
-      "category": "->categories.doces",
+      "category": ["Blusas", "Bermudas"],
       "photo": "yao.jpg",
       "location": {
         "city": "Betim",
@@ -84,7 +84,7 @@
       "name": "Turco Klataperr",
       "email": "turco@turco.com",
       "password": "=bcrypt.hashSync('turco', 10)",
-      "category": "->categories.doces",
+      "category": ["Acessórios"],
       "photo": "aminu.jpg",
       "location": {
         "city": "Betim",
@@ -95,7 +95,7 @@
       "name": "Carlton Dancer",
       "email": "carlton@carlton.com",
       "password": "=bcrypt.hashSync('carlton', 10)",
-      "category": "->categories.salgados",
+      "category": ["Doces", "Salgados", "Hortifruti"],
       "location": {
         "city": "Contagem",
         "state": "MG"
