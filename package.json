@@ -18,6 +18,7 @@
     "express": "^4.14.0",
     "express-jwt": "^3.4.0",
     "express-validator": "^2.20.8",
+    "extend": "^3.0.0",
     "jsonwebtoken": "^7.1.9",
     "mongoose": "^4.5.9",
     "mongoose-seeder": "^1.2.1",

@@ -3,6 +3,7 @@ let Seller = require('../models/Sellers');
 let Products = require('../models/Products');
 let jwt = require('express-jwt');
 let bcrypt = require('bcrypt');
+let extend = require('extend');
 
 /**
  * Check if there is an email registred
@@ -62,9 +63,17 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   Seller
     .findById(req.params.id)
+    .lean()
     .exec((err, seller) => {
       if (err) throw err;
-      res.json(seller);
+      Products
+        .count({seller: seller._id})
+        .exec((error, countProducts) => {
+          if (error) throw error;
+          let sellerModified = extend(true, seller, {'products': countProducts});
+          console.log(sellerModified);
+          res.json(sellerModified);
+        });
     });
 });
 
