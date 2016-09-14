@@ -1,6 +1,11 @@
 let router = require('express').Router();
+
 let User = require('../models/Users');
-let jwt = require('express-jwt');
+let Sellers = require('../models/Sellers');
+let Products = require('../models/Products');
+
+let expressJwt = require('express-jwt');
+let jwt = require('jsonwebtoken');
 let bcrypt = require('bcrypt');
 
 /**
@@ -42,6 +47,19 @@ router.get('/:id', (req, res) => {
 });
 
 /**
+ * Get user followed sellers
+ */
+router.get('/:id/following', (req, res) => {
+  User
+    .findById(req.params.id)
+    .populate('followedSellers')
+    .exec((err, user) => {
+      if (err) throw err;
+      res.json(user.followedSellers);
+    });
+});
+
+/**
  * Create new User
  */
 router.post('/', (req, res) => {
@@ -56,7 +74,7 @@ router.post('/', (req, res) => {
   } else {
     let newUser = new User(req.body);
     console.info(newUser);
-    bcrypt.hash(newUser.password, 10, function(err, hash) {
+    bcrypt.hash(newUser.password, 10, function (err, hash) {
       if (err) throw err;
       newUser.password = hash;
       newUser.save(err => {
@@ -70,7 +88,7 @@ router.post('/', (req, res) => {
 /**
  * Edit User
  */
-router.put('/:id', jwt({secret: process.env.APP_SECRET}), (req, res) => {
+router.put('/:id', expressJwt({secret: process.env.APP_SECRET}), (req, res) => {
   req.checkParams('id', 'invalid').notEmpty();
   let errors = req.validationErrors();
 
@@ -87,7 +105,7 @@ router.put('/:id', jwt({secret: process.env.APP_SECRET}), (req, res) => {
 /**
  * Delete User
  */
-router.delete('/:id', jwt({secret: process.env.APP_SECRET}), (req, res) => {
+router.delete('/:id', expressJwt({secret: process.env.APP_SECRET}), (req, res) => {
   req.checkParams('id', 'invalid').notEmpty();
   let errors = req.validationErrors();
 

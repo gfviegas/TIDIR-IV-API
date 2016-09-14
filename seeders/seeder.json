@@ -130,13 +130,24 @@
       "category": "Lanches",
       "seller": "->sellers.carlton"
     },
+    "coxinha2": {
+      "name": "Coxinha Vegetariana",
+      "description": "Coxinha Vegetariana super deliciosa",
+      "images": ["products/2/1.jpg", "products/2/2.jpg"],
+      "price": "7.5",
+      "favorite": false,
+      "stock_avaible": 0,
+      "stock_reserved": 14,
+      "category": "Lanches",
+      "seller": "->sellers.carlton"
+    },
     "empada": {
       "name": "Empada de Camarão",
       "description": "Empada de Camarão com massa de batata caseira, super gostosa!",
       "images": ["products/3/1.jpg"],
-      "price": "5.5",
+      "price": "4.25",
       "favorite": false,
-      "stock_avaible": 5,
+      "stock_avaible": 15,
       "stock_reserved": 4,
       "category": "Lanches",
       "seller": "->sellers.carlton"
@@ -158,7 +169,7 @@
         "facebook": "gustavofviegas",
         "phone": "31 3595 7005"
       },
-      "followedSellers": ["->sellers.toninho"]
+      "followedSellers": ["->sellers.carlton"]
     },
     "silvio": {
       "name": "Silvio Santos",
