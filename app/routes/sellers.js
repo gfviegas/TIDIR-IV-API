@@ -83,7 +83,7 @@ router.get('/:id', (req, res) => {
 router.get('/:id/products', (req, res) => {
   Products
     .find({seller: req.params.id})
-    .select('-seller')
+    .populate('seller', '-updatedAt -createdAt -email -category')
     .exec((err, products) => {
       if (err) throw err;
       res.json(products);

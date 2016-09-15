@@ -6,7 +6,7 @@ let User = require('../models/Users');
 let getProductsList = (filters, sort, res) => {
   Products
   .find(filters, null, sort)
-  .populate('seller', '-updatedAt -createdAt -email -category -location')
+  .populate('seller', '-updatedAt -createdAt -email -category')
   .exec((err, products) => {
     if (err) throw err;
     res.status(200).json(products);
@@ -57,7 +57,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   Products
     .findById(req.params.id)
-    .populate('seller', '-updatedAt -createdAt -email -category -location')
+    .populate('seller', '-updatedAt -createdAt -email -category')
     .exec((err, category) => {
       if (err) throw err;
       res.json(category);
