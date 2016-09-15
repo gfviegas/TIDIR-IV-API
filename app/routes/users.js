@@ -47,19 +47,6 @@ router.get('/:id', (req, res) => {
 });
 
 /**
- * Get user followed sellers
- */
-router.get('/:id/following', (req, res) => {
-  User
-    .findById(req.params.id)
-    .populate('followedSellers')
-    .exec((err, user) => {
-      if (err) throw err;
-      res.json(user.followedSellers);
-    });
-});
-
-/**
  * Create new User
  */
 router.post('/', (req, res) => {
