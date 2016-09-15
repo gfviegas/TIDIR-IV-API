@@ -6,6 +6,7 @@ let User = require('../models/Users');
 let expressJwt = require('express-jwt');
 let jwt = require('jsonwebtoken');
 
+
 /**
  * Get user followed sellers
  */
@@ -17,6 +18,23 @@ router.get('/:id/followers', (req, res) => {
       if (err) throw err;
       res.status(200).json(user.followedSellers);
     });
+});
+
+/**
+* Get user followed sellers
+*/
+router.get('/:id/followers/check/:sellerid/', (req, res) => {
+  User
+  .find({_id: req.params.id, followedSellers: req.params.sellerid})
+  .exec((err, user) => {
+    if (err) throw err;
+
+    if (user.length > 0) {
+      res.status(200).json({following: true});
+    } else {
+      res.status(200).json({following: false});
+    }
+  });
 });
 
 /**
