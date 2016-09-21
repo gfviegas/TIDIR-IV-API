@@ -13,7 +13,7 @@ API para o Aplicativo do TIDIR IV
 
 ### Iniciar API
 - Inicie o banco com `mongod` (ou `mongod.exe`) em uma aba separada do terminal.
-- Para iniciar a API é só rodar `nodemon index.js`
+- Para iniciar a API é só rodar `npm start`
 
 ### Alimentar Banco de Dados
 Para rodar os seeds e iniciar o banco com dados inicias é só rodar `node seeders/seeder.js`
