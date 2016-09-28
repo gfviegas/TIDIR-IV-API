@@ -2,6 +2,7 @@ let router = require('express').Router();
 let ObjectId = require('mongoose').Schema.Types.ObjectId;
 
 let User = require('../models/Users');
+let Posts = require('../models/Posts');
 
 let expressJwt = require('express-jwt');
 let jwt = require('jsonwebtoken');
@@ -35,6 +36,24 @@ router.get('/:id/followers/check/:sellerid/', (req, res) => {
       res.status(200).json({following: false});
     }
   });
+});
+
+/**
+ * Get user followed sellers posts
+ */
+router.get('/:id/followers/posts', (req, res) => {
+  User
+    .findById(req.params.id)
+    .exec((err, user) => {
+      if (err) throw err;
+
+      Posts
+        .find({ author: {$in: user.followedSellers} })
+        .exec((error, posts) => {
+          if (error) throw err;
+          res.status(200).json(posts);
+        });
+    });
 });
 
 /**
