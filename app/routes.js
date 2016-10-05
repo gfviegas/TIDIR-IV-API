@@ -29,8 +29,5 @@ router.use('/posts', require('./routes/posts'));
 
 router.use('/products', require('./routes/products'));
 
-// User.methods(['get', 'put', 'post', 'delete']);
-// User.register(router, '/users');
-
 // Return router
 module.exports = router;

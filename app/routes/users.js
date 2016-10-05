@@ -82,7 +82,7 @@ router.put('/:id', expressJwt({secret: process.env.APP_SECRET}), (req, res) => {
   if (errors) {
     res.status(422).json(errors);
   } else {
-    User.findOneAndUpdate({_id: req.params.id}, {$set: req.body}, {new: true}, (err, user) => {
+    User.findByIdAndUpdate(req.params.id, {$set: req.body}, {new: true}, (err, user) => {
       if (err) throw err;
       res.status(200).json(user);
     });
