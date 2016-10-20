@@ -24,7 +24,8 @@ router.post('/user', (req, res) => {
             user.type = 'user';
             let payload = {
               user_data: {
-                name: user.name
+                name: user.name,
+                type: 'user'
               },
               sub: user.id
             };
@@ -57,10 +58,11 @@ router.post('/seller', (req, res) => {
             res.status(422).json({ error: 'wrong_credentials' });
           } else {
             delete user.password;
-            user.type = 'user';
+            user.type = 'seller';
             let payload = {
               user_data: {
-                name: user.name
+                name: user.name,
+                type: 'seller'
               },
               sub: user.id
             };

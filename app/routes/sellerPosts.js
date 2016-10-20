@@ -12,6 +12,7 @@ let jwt = require('jsonwebtoken');
 router.get('/:id/posts', (req, res) => {
   Posts
     .find({author: req.params.id})
+    .sort('-createdAt')
     .populate('author')
     .exec((err, posts) => {
       if (err) throw err;
@@ -33,7 +34,10 @@ router.post('/:id/posts', (req, res) => {
 
     newPost.save(err => {
       if (err) throw err;
-      res.status(201).json(newPost);
+      newPost.populate('author', (error) => {
+        if (error) throw error;
+        res.status(201).json(newPost);
+      });
     });
   }
 });

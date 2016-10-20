@@ -3,7 +3,6 @@ let express = require('express');
 let router = express.Router();
 let jwtMiddleware = require('./middlewares/jwtMiddleware');
 
-
 // router.use((err, req, res, next) => {
 //   console.log(req);
 //   // console.error(err.stack);
