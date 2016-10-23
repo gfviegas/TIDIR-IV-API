@@ -64,4 +64,22 @@ router.get('/:id', (req, res) => {
     });
 });
 
+/**
+ * Edit User
+ */
+router.put('/:id', (req, res) => {
+  req.checkParams('id', 'invalid').notEmpty();
+  let errors = req.validationErrors();
+
+  if (errors) {
+    res.status(422).json(errors);
+  } else {
+    Products
+    .findByIdAndUpdate(req.params.id, {$set: req.body}, {new: true}, (err, product) => {
+      if (err) throw err;
+      res.status(200).json(product);
+    });
+  }
+});
+
 module.exports = router;
