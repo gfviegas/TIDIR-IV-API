@@ -51,6 +51,7 @@ router.get('/:id/followers/posts', (req, res) => {
         .find({ author: {$in: user.followedSellers} })
         .populate('author', '-category -createdAt -updatedAt -email -contact')
         .lean()
+        .sort('-createdAt')
         .exec((error, posts) => {
           if (error) throw err;
           res.status(200).json(posts);
