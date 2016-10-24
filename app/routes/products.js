@@ -65,26 +65,8 @@ router.get('/:id', (req, res) => {
 });
 
 /**
- * Edit Product
- */
-router.put('/:id', (req, res) => {
-  req.checkParams('id', 'invalid').notEmpty();
-  let errors = req.validationErrors();
-
-  if (errors) {
-    res.status(422).json(errors);
-  } else {
-    Products
-    .findByIdAndUpdate(req.params.id, {$set: req.body}, {new: true}, (err, product) => {
-      if (err) throw err;
-      res.status(200).json(product);
-    });
-  }
-});
-
-/**
- * Create new Product
- */
+* Create new Product
+*/
 router.post('/', (req, res) => {
   req.assert('name', 'required').notEmpty();
   req.assert('description', 'required').notEmpty();
@@ -103,6 +85,46 @@ router.post('/', (req, res) => {
     newProduct.save(err => {
       if (err) throw err;
       res.status(201).json(newProduct);
+    });
+  }
+});
+
+/**
+ * Edit Product
+ */
+router.put('/:id', (req, res) => {
+  req.checkParams('id', 'invalid').notEmpty();
+  req.assert('name', 'required').notEmpty();
+  req.assert('description', 'required').notEmpty();
+  req.assert('category', 'required').notEmpty();
+  req.assert('stock_avaible', 'required').notEmpty();
+  req.assert('stock_reserved', 'required').notEmpty();
+  let errors = req.validationErrors();
+
+  if (errors) {
+    res.status(422).json(errors);
+  } else {
+    Products
+    .findByIdAndUpdate(req.params.id, {$set: req.body}, {new: true}, (err, product) => {
+      if (err) throw err;
+      res.status(200).json(product);
+    });
+  }
+});
+
+/**
+ * Delete Product
+ */
+router.delete('/:id', (req, res) => {
+  req.checkParams('id', 'invalid').notEmpty();
+  let errors = req.validationErrors();
+
+  if (errors) {
+    res.status(422).json(errors);
+  } else {
+    Products.findById(req.params.id).remove(err => {
+      if (err) throw err;
+      res.status(204).send();
     });
   }
 });
