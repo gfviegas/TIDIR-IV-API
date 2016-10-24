@@ -65,7 +65,7 @@ router.get('/:id', (req, res) => {
 });
 
 /**
- * Edit User
+ * Edit Product
  */
 router.put('/:id', (req, res) => {
   req.checkParams('id', 'invalid').notEmpty();
@@ -78,6 +78,31 @@ router.put('/:id', (req, res) => {
     .findByIdAndUpdate(req.params.id, {$set: req.body}, {new: true}, (err, product) => {
       if (err) throw err;
       res.status(200).json(product);
+    });
+  }
+});
+
+/**
+ * Create new Product
+ */
+router.post('/', (req, res) => {
+  req.assert('name', 'required').notEmpty();
+  req.assert('description', 'required').notEmpty();
+  req.assert('category', 'required').notEmpty();
+  req.assert('stock_avaible', 'required').notEmpty();
+  req.assert('stock_reserved', 'required').notEmpty();
+  let errors = req.validationErrors();
+
+  if (errors) {
+    res.status(422).json(errors);
+  } else {
+    let seller = jwt.decode(req.headers.authorization.split(' ')[1]);
+    let newProduct = new Products(req.body);
+    newProduct.seller = seller.sub;
+    console.log(newProduct);
+    newProduct.save(err => {
+      if (err) throw err;
+      res.status(201).json(newProduct);
     });
   }
 });

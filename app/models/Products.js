@@ -5,7 +5,7 @@ let mongoose = require('mongoose');
 let productSchema = new mongoose.Schema({
   name: {type: String, required: true},
   description: {type: String, required: true},
-  images: [{type: String}],
+  images: {type: Array, default: ['product.png']},
   price: {type: Number, required: true},
   favorite: {type: Boolean, default: false},
   stock_avaible: {type: Number, required: true, default: 0},

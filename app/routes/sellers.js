@@ -81,12 +81,30 @@ router.get('/:id', (req, res) => {
  * Get products by a seller
  */
 router.get('/:id/products', (req, res) => {
+  let filters = {seller: req.params.id};
+  let sort = {sort: 'date'};
+
+  if (req.query) {
+    if (req.query.name) {
+      filters['name'] = new RegExp(req.query.name, 'i');
+    }
+    if (req.query.category) {
+      filters['category'] = new RegExp(req.query.category, 'i');
+    }
+    if (req.query.onlyInStock) {
+      filters['stock_avaible'] = { $gt: 0 };
+    }
+    if (req.query.sort) {
+      sort = {sort: req.query.sort};
+    }
+  }
+
   Products
-    .find({seller: req.params.id})
+    .find(filters, null, sort)
     .populate('seller', '-updatedAt -createdAt -email -category')
     .exec((err, products) => {
       if (err) throw err;
-      res.json(products);
+      res.status(200).json(products);
     });
 });
 
