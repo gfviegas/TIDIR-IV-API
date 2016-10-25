@@ -1,11 +1,22 @@
 let router = require('express').Router();
 let Seller = require('../models/Sellers');
 let Products = require('../models/Products');
-let jwt = require('express-jwt');
+let User = require('../models/Users');
+let expressJwt = require('express-jwt');
+let jwt = require('jsonwebtoken');
 let bcrypt = require('bcrypt');
 let extend = require('extend');
 let multipart = require('connect-multiparty');
 let fs = require('fs');
+
+let getSellersList = (filters, sort, res) => {
+  Seller
+    .find(filters, null, sort)
+    .exec((err, sellers) => {
+      if (err) throw err;
+      res.status(200).json(sellers);
+    });
+};
 
 /**
  * Check if there is an email registred
@@ -41,22 +52,25 @@ router.get('/', (req, res) => {
     if (req.query.category) {
       filters['category'] = new RegExp(req.query.category, 'i');
     }
-    if (req.query.onlyFollowedSellers) {
-      /**
-       * TODO: Logica pra so pegar seguidores
-       */
-    }
     if (req.query.sort) {
       sort = {sort: req.query.sort};
     }
   }
 
-  Seller
-    .find(filters, null, sort)
-    .exec((err, sellers) => {
-      if (err) throw err;
-      res.status(200).json(sellers);
+  if (req.query.onlyFollowedSellers) {
+    let user = jwt.decode(req.headers.authorization.split(' ')[1]);
+    User
+    .findById(user.sub)
+    .exec((error, user) => {
+      if (error) throw error;
+      if (user) {
+        filters['_id'] = { '$in': user.followedSellers };
+        getSellersList(filters, sort, res);
+      }
     });
+  } else {
+    getSellersList(filters, sort, res);
+  }
 });
 
 /**
@@ -139,7 +153,7 @@ router.post('/', (req, res) => {
 /**
  * Edit Seller
  */
-router.put('/:id', jwt({secret: process.env.APP_SECRET}), (req, res) => {
+router.put('/:id', expressJwt({secret: process.env.APP_SECRET}), (req, res) => {
   req.checkParams('id', 'invalid').notEmpty();
   let errors = req.validationErrors();
 
@@ -156,7 +170,7 @@ router.put('/:id', jwt({secret: process.env.APP_SECRET}), (req, res) => {
 /**
  * Delete Seller
  */
-router.delete('/:id', jwt({secret: process.env.APP_SECRET}), (req, res) => {
+router.delete('/:id', expressJwt({secret: process.env.APP_SECRET}), (req, res) => {
   req.checkParams('id', 'invalid').notEmpty();
   let errors = req.validationErrors();
 
