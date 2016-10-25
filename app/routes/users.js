@@ -7,6 +7,8 @@ let Products = require('../models/Products');
 let expressJwt = require('express-jwt');
 let jwt = require('jsonwebtoken');
 let bcrypt = require('bcrypt');
+let multipart = require('connect-multiparty');
+let fs = require('fs');
 
 /**
  * Check if there is an email registred
@@ -106,4 +108,42 @@ router.delete('/:id', expressJwt({secret: process.env.APP_SECRET}), (req, res) =
   }
 });
 
-module.exports = router;
+/**
+ * Changes user image
+ */
+router.put('/:id/image', multipart(), (req, res) => {
+  let file = req.files.file;
+  let path = req.files.file.path;
+  let localPath = process.cwd() + '/public/img/users/' + req.params.id;
+  if (!fs.existsSync(localPath)) {
+    fs.mkdirSync(localPath);
+  }
+
+  let fileName;
+  if (file.type === 'image/jpeg' || 'image/jpg') {
+    fileName = 'profile.jpg';
+  } else if (file.type === 'image/png') {
+    fileName = 'profile.png';
+  } else {
+    return res.status(422).json({format: 'invalid_format'});
+  }
+
+  let newFile = localPath + '/' + fileName;
+  fs.rename(path, newFile, (err) => {
+    if (err) {
+      res.status(500).json({error: err});
+    }
+
+    User
+      .findById(req.params.id)
+      .exec((err, user) => {
+        if (err) throw err;
+        user.photo = 'users/' + req.params.id + '/' + fileName;
+        user.save();
+
+        res.status(200).json(user);
+      });
+  });
+});
+
+ module.exports = router;
