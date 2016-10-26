@@ -2,6 +2,9 @@ let router = require('express').Router();
 let Products = require('../models/Products');
 let jwt = require('jsonwebtoken');
 let User = require('../models/Users');
+let fs = require('fs');
+let multipart = require('connect-multiparty');
+let uid = require('uid');
 
 let getProductsList = (filters, popFilters, sort, res) => {
   Products
@@ -135,6 +138,65 @@ router.delete('/:id', (req, res) => {
       if (err) throw err;
       res.status(204).send();
     });
+  }
+});
+
+/**
+ * Add a product image
+ */
+router.post('/:id/image', multipart(), (req, res) => {
+  let file = req.files.file;
+  let path = req.files.file.path;
+  let localPath = process.cwd() + '/public/img/products/' + req.params.id;
+  if (!fs.existsSync(localPath)) {
+    fs.mkdirSync(localPath);
+  }
+
+  let fileName;
+  if (file.type === 'image/jpeg' || 'image/jpg') {
+    fileName = uid(10) + '.jpg';
+  } else if (file.type === 'image/png') {
+    fileName = uid(10) + '.png';
+  } else {
+    return res.status(422).json({format: 'invalid_format'});
+  }
+
+  let newFile = localPath + '/' + fileName;
+  fs.rename(path, newFile, (err) => {
+    if (err) {
+      res.status(500).json({error: err});
+    }
+    let dbPath = 'products/' + req.params.id + '/' + fileName;
+
+    Products
+      .findOneAndUpdate({_id: req.params.id}, {$addToSet: {images: dbPath}}, {new: true})
+      .exec((err, product) => {
+        if (err) throw err;
+        res.status(200).json(product.images);
+      });
+  });
+});
+
+/**
+ * Remove a Image of a product
+ */
+router.post('/:id/images/delete', (req, res) => {
+  console.log(req.body);
+  req.checkParams('id', 'invalid').notEmpty();
+  req.assert('image', 'required').notEmpty();
+  let errors = req.validationErrors();
+  let localPath = process.cwd() + '/public/img/';
+
+  if (errors) {
+    res.status(422).json(errors);
+  } else {
+    Products
+      .findOneAndUpdate({_id: req.params.id}, { $pull: {images: req.body.image} }, {new: true})
+      .exec((err, product) => {
+        if (err) throw err;
+        fs.unlinkSync(localPath + '/' + req.body.image);
+        res.status(200).json(product.images);
+      });
   }
 });
 
