@@ -3,12 +3,19 @@ let Products = require('../models/Products');
 let jwt = require('jsonwebtoken');
 let User = require('../models/Users');
 
-let getProductsList = (filters, sort, res) => {
+let getProductsList = (filters, popFilters, sort, res) => {
   Products
   .find(filters, null, sort)
-  .populate('seller', '-updatedAt -createdAt -email -category')
+  .populate({
+    path: 'seller',
+    match: popFilters,
+    // select: '-updatedAt -createdAt -email -category',
+    model: 'Sellers'
+  })
   .exec((err, products) => {
     if (err) throw err;
+
+    products = products.filter((p) => p.seller);
     res.status(200).json(products);
   });
 };
@@ -18,7 +25,8 @@ let getProductsList = (filters, sort, res) => {
  */
 router.get('/', (req, res) => {
   let filters = {};
-  let sort = {sort: 'date'};
+  let popFilters = {};
+  let sort = {sort: '-createdAt'};
 
   if (req.query) {
     if (req.query.name) {
@@ -26,6 +34,11 @@ router.get('/', (req, res) => {
     }
     if (req.query.category) {
       filters['category'] = new RegExp(req.query.category, 'i');
+    }
+    if (req.query.location) {
+      let location = JSON.parse(req.query.location);
+      popFilters['location.state'] = location.state;
+      popFilters['location.city'] = location.city;
     }
     if (req.query.onlyInStock) {
       filters['stock_avaible'] = { $gt: 0 };
@@ -42,8 +55,9 @@ router.get('/', (req, res) => {
     .exec((error, user) => {
       if (error) throw error;
       if (user) {
-        filters['seller'] = { '$in': user.followedSellers };
-        getProductsList(filters, sort, res);
+        // filters['seller'] = {$in: user.followedSellers};
+        // popFilters['_id'] = {$in: user.followedSellers};
+        getProductsList(filters, popFilters, sort, res);
       }
     });
   } else {
