@@ -94,11 +94,6 @@ router.post('/', (req, res) => {
  */
 router.put('/:id', (req, res) => {
   req.checkParams('id', 'invalid').notEmpty();
-  req.assert('name', 'required').notEmpty();
-  req.assert('description', 'required').notEmpty();
-  req.assert('category', 'required').notEmpty();
-  req.assert('stock_avaible', 'required').notEmpty();
-  req.assert('stock_reserved', 'required').notEmpty();
   let errors = req.validationErrors();
 
   if (errors) {

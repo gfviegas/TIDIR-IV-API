@@ -10,6 +10,7 @@ let multipart = require('connect-multiparty');
 let fs = require('fs');
 
 let getSellersList = (filters, sort, res) => {
+  console.log(filters);
   Seller
     .find(filters, null, sort)
     .exec((err, sellers) => {
@@ -51,6 +52,9 @@ router.get('/', (req, res) => {
     }
     if (req.query.category) {
       filters['category'] = new RegExp(req.query.category, 'i');
+    }
+    if (req.query.location) {
+      filters['location'] = JSON.parse(req.query.location);
     }
     if (req.query.sort) {
       sort = {sort: req.query.sort};
