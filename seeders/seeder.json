@@ -69,15 +69,13 @@
       "email": "seller@seller.com",
       "password": "=bcrypt.hashSync('seller', 10)",
       "category": ["Blusas", "Bermudas"],
-      "photo": "yao.jpg",
+      "photo": "person.jpeg",
       "location": {
         "city": "Betim",
         "state": "MG"
       },
       "contact": {
-        "whatsapp": "31 99251 4251",
-        "facebook": "gustavofviegas",
-        "phone": "31 3595 7005"
+        "facebook": "toninho"
       }
     },
     "turco": {
@@ -85,7 +83,7 @@
       "email": "turco@turco.com",
       "password": "=bcrypt.hashSync('turco', 10)",
       "category": ["Guloseimas", "Perfumes"],
-      "photo": "aminu.jpg",
+      "photo": "person.jpeg",
       "location": {
         "city": "Betim",
         "state": "MG"
@@ -101,7 +99,7 @@
         "state": "MG"
       },
       "contact": {
-        "whatsapp": "31 99251 4251"
+        "whatsapp": "3199876531"
       }
     }
   },
@@ -111,7 +109,7 @@
     "brigadeiro": {
       "name": "Brigadeiro Branco Diet",
       "description": "Brigadeiro branco feito de leite ninho sem açúcares, ideal para pessoas com diabetes ou em dietas!",
-      "images": ["products/1/1.jpg", "products/1/2.jpg", "products/1/3.jpeg", "products/1/4.jpeg"],
+      "images": [],
       "price": "2.5",
       "favorite": false,
       "stock_avaible": 100,
@@ -122,7 +120,7 @@
     "coxinha": {
       "name": "Coxinha de Frango com Catupiry",
       "description": "Coxinha de Frango com Catupiry caseiro. Ingredientes: Milho, Frango, Catupiry, Pimenta",
-      "images": ["products/2/1.jpg", "products/2/2.jpg"],
+      "images": [],
       "price": "5.5",
       "favorite": false,
       "stock_avaible": 5,
@@ -133,7 +131,7 @@
     "coxinha2": {
       "name": "Coxinha Vegetariana",
       "description": "Coxinha Vegetariana super deliciosa",
-      "images": ["products/2/1.jpg", "products/2/2.jpg"],
+      "images": [],
       "price": "7.5",
       "favorite": false,
       "stock_avaible": 0,
@@ -144,7 +142,7 @@
     "empada": {
       "name": "Empada de Camarão",
       "description": "Empada de Camarão com massa de batata caseira, super gostosa!",
-      "images": ["products/3/1.jpg"],
+      "images": [],
       "price": "4.25",
       "favorite": false,
       "stock_avaible": 15,
@@ -157,7 +155,7 @@
   "users": {
     "_model": "Users",
     "gustavo": {
-      "name": "Gustavo Viegas",
+      "name": "Usuário Teste",
       "email": "teste@teste.com",
       "password": "=bcrypt.hashSync('teste', 10)",
       "location": {
@@ -165,9 +163,7 @@
         "state": "MG"
       },
       "contact": {
-        "whatsapp": "31 99251 4251",
-        "facebook": "gustavofviegas",
-        "phone": "31 3595 7005"
+        "facebook": "usuarioteste"
       },
       "followedSellers": ["->sellers.carlton"]
     },
@@ -180,9 +176,8 @@
         "state": "MG"
       },
       "contact": {
-        "whatsapp": "31 99251 4251",
         "facebook": "silviosantos",
-        "phone": "31 3595 7005"
+        "phone": "3199765541"
       }
     }
   }

@@ -5,6 +5,7 @@ let User = require('../models/Users');
 let fs = require('fs');
 let multipart = require('connect-multiparty');
 let uid = require('uid');
+let jimp = require('jimp');
 
 let getProductsList = (filters, popFilters, sort, res) => {
   Products
@@ -174,6 +175,14 @@ router.post('/:id/image', multipart(), (req, res) => {
         if (err) throw err;
         res.status(200).json(product.images);
       });
+
+    jimp.read(newFile).then(function (image) {
+      image.resize(jimp.AUTO, 200)
+      .quality(60)
+      .write(newFile);
+    }).catch(function (err) {
+      console.error(err);
+    });
   });
 });
 

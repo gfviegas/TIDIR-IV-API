@@ -8,6 +8,7 @@ let bcrypt = require('bcrypt');
 let extend = require('extend');
 let multipart = require('connect-multiparty');
 let fs = require('fs');
+let jimp = require('jimp');
 
 let getSellersList = (filters, sort, res) => {
   Seller
@@ -224,6 +225,14 @@ router.put('/:id/image', multipart(), (req, res) => {
 
         res.status(200).json(user);
       });
+
+    jimp.read(newFile).then(function (image) {
+      image.resize(200, 200)
+      .quality(60)
+      .write(newFile);
+    }).catch(function (err) {
+      console.error(err);
+    });
   });
 });
 

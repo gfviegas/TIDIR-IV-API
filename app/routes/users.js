@@ -4,6 +4,7 @@ let User = require('../models/Users');
 let Sellers = require('../models/Sellers');
 let Products = require('../models/Products');
 
+let jimp = require('jimp');
 let expressJwt = require('express-jwt');
 let jwt = require('jsonwebtoken');
 let bcrypt = require('bcrypt');
@@ -143,6 +144,15 @@ router.put('/:id/image', multipart(), (req, res) => {
 
         res.status(200).json(user);
       });
+
+    jimp.read(newFile).then(function (image) {
+      image.resize(200, 200)
+      .quality(60)
+      .write(newFile);
+    }).catch(function (err) {
+      console.error(err);
+    });
+
   });
 });
 
