@@ -10,7 +10,6 @@ let multipart = require('connect-multiparty');
 let fs = require('fs');
 
 let getSellersList = (filters, sort, res) => {
-  console.log(filters);
   Seller
     .find(filters, null, sort)
     .exec((err, sellers) => {
@@ -54,7 +53,9 @@ router.get('/', (req, res) => {
       filters['category'] = new RegExp(req.query.category, 'i');
     }
     if (req.query.location) {
-      filters['location'] = JSON.parse(req.query.location);
+      let location = JSON.parse(req.query.location);
+      filters['location.state'] = location.state;
+      filters['location.city'] = location.city;
     }
     if (req.query.sort) {
       sort = {sort: req.query.sort};
@@ -68,7 +69,7 @@ router.get('/', (req, res) => {
     .exec((error, user) => {
       if (error) throw error;
       if (user) {
-        filters['_id'] = { '$in': user.followedSellers };
+        filters['_id'] = { $in: user.followedSellers };
         getSellersList(filters, sort, res);
       }
     });
