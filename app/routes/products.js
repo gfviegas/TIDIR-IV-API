@@ -59,12 +59,12 @@ router.get('/', (req, res) => {
       if (error) throw error;
       if (user) {
         // filters['seller'] = {$in: user.followedSellers};
-        // popFilters['_id'] = {$in: user.followedSellers};
+        popFilters['_id'] = {$in: user.followedSellers};
         getProductsList(filters, popFilters, sort, res);
       }
     });
   } else {
-    getProductsList(filters, sort, res);
+    getProductsList(filters, popFilters, sort, res);
   }
 });
 
