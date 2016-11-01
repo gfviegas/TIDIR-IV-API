@@ -8,6 +8,7 @@ let uid = require('uid');
 let jimp = require('jimp');
 
 let getProductsList = (filters, popFilters, sort, res) => {
+  console.log(filters);
   Products
   .find(filters, null, sort)
   .populate({
@@ -37,7 +38,8 @@ router.get('/', (req, res) => {
       filters['name'] = new RegExp(req.query.name, 'i');
     }
     if (req.query.category) {
-      filters['category'] = new RegExp(req.query.category, 'i');
+      let category = req.query.category.replace(/[^\w\s]/gi, '');
+      filters['category'] = new RegExp(category);
     }
     if (req.query.location) {
       let location = JSON.parse(req.query.location);
