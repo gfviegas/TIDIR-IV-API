@@ -185,6 +185,18 @@ router.delete('/:id', expressJwt({secret: process.env.APP_SECRET}), (req, res) =
   } else {
     Seller.find({_id: req.params.id}).remove(err => {
       if (err) throw err;
+
+      User
+        .update({followedSellers: req.params.id}, { $pull: {followedSellers: req.params.id} })
+        .exec((err, user) => {
+          if (err) throw err;
+        });
+      Products
+        .remove({seller: req.params.id})
+        .exec((err) => {
+          if (err) throw err;
+        });
+
       res.status(204).send();
     });
   }
