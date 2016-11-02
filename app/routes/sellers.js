@@ -111,7 +111,8 @@ router.get('/:id/products', (req, res) => {
       filters['name'] = new RegExp(req.query.name, 'i');
     }
     if (req.query.category) {
-      filters['category'] = new RegExp(req.query.category, 'i');
+      let category = req.query.category.replace(/[^\w\s]/gi, '');
+      filters['category'] = new RegExp(category, 'i');
     }
     if (req.query.onlyInStock) {
       filters['stock_avaible'] = { $gt: 0 };
