@@ -11,6 +11,7 @@ let productSchema = new mongoose.Schema({
   stock_avaible: {type: Number, required: true, default: 0},
   stock_reserved: {type: Number, required: true, default: 0},
   category: {type: String},
+  reference: {type: String, default: 'Unidade'},
   seller: {type: mongoose.Schema.Types.ObjectId, ref: 'Sellers'}
 });
 
